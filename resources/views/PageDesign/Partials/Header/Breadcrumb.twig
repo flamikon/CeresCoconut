@@ -2,10 +2,9 @@
 {% set homepageURL = services.url.getHomepageURL() %}
 
 {% if categoryBreadcrumbs is not empty %}
-<div class="breadcrumbs header-fw">
-    <nav class="small d-none d-md-block px-0 background-breadcrumb" data-component="breadcrumbs" data-renderer="twig">
+    <nav data-component="breadcrumbs" data-renderer="twig" class="small hidden-sm-down background-breadcrumb">
         {% set crumbs = [] %}
-        <ul class="breadcrumb container-max px-3 py-2 my-0 mx-auto">
+        <ul class="breadcrumb container-max">
             <li class="breadcrumb-item">
                 <a href="{{ homepageURL }}">
                     <i class="fa fa-home" aria-hidden="true"></i>
@@ -53,9 +52,7 @@
 
             {% set lastCategory = categoryBreadcrumbs | last %}
             {% if lastCategory.details is defined %}
-                <li class="breadcrumb-item active">
-                    <span>{{ lastCategory.details[0].name }}</span>
-                </li>
+                <li class="breadcrumb-item active"><span>{{ lastCategory.details[0].name }}</span></li>
             {% elseif item.documents[0].data is defined %}
                 <li class="breadcrumb-item active">
                     <span>{{ item.documents[0].data | itemName }}</span>
@@ -70,5 +67,4 @@
         }
         </script>
     </nav>
-</div>
 {% endif %}

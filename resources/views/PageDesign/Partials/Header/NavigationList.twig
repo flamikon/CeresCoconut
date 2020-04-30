@@ -1,7 +1,7 @@
 {#Insert markup for navigation list here#}
 {# import "Ceres::Category.Macros.CategoryTree" as Tree #}
 
-<ul class="mainmenu p-0 m-0 d-flex">
+<ul class="mainmenu">
     <li><a href="https://amikon-shop.de">{{ trans("CeresCoconut::Template.headerhome") }}</a></li>
     <li class="ddown"><a href="#">{{ trans("CeresCoconut::Template.headercategory") }}</a>
 	<ul data-level="1" id="navDropdown0" class="collapse">
@@ -97,6 +97,7 @@
     <li><a href="/contact">{{ trans("CeresCoconut::Template.headercontact") }}</a></li>
     <li><a href="/content/ankaufform">{{ trans("CeresCoconut::Template.headerpurchaseform") }}</a></li>
 </ul>
+
 
 {#<ul class="mainmenu">
     {{ Tree.get_nav_bar(
