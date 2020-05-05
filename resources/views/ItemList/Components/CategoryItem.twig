@@ -72,7 +72,7 @@
                                     ${ $translate("Ceres::Template.itemSetPrice", { price: itemSetPrice }) } *
                                 </template>
                                  <template v-else-if="!!item.item && item.item.salableVariationCount > 1 && $ceres.isCheapestSorting" >
-                                     ${ $translate("Ceres::Template.categoryItemFromPrice", { price: itemPrice }) } *
+                                     {{ trans("Ceres::Template.categoryItemFromPrice", {"price": "${itemPrice}"}) }} *
                                 </template>
                                 <template v-else>
                                     ${ item.prices.default.unitPrice.formatted | specialOffer(item.prices, "unitPrice", "formatted") } *
@@ -85,11 +85,11 @@
 					
 		    {# AVAILABILITY #}
 					
-			<div>
-			 <span v-if="item.variation.availability" :class="'availability badge availability_' + item.variation.availability.id">
-			  <span>${ item.variation.availability.names.name }</span>
-			 </span>
-			</div>
+		    <div>
+			<span v-if="item.variation.availability" :class="'availability badge availability_' + item.variation.availability.id">
+			    <span>${ item.variation.availability.names.name }</span>
+			</span>
+		    </div>
 					
 		    {# ./ AVAILABILITY #}
 					
