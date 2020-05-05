@@ -580,6 +580,14 @@ margin-bottom: 0px;
     color: #FFF;
 }
 
+.footer .widget-grid .widget-inner .widget-list .widget-inner {
+    padding: 1rem;
+}
+@media (max-width: 767.98px)
+.footer .widget-grid .widget-inner:not(:last-child) .widget-list .widget-inner {
+    padding-bottom: 0;
+}
+
 /* Kategorieansicht Artikelpreis sowie Informationen ausblenden */
 
 .thumb-content .thumb-meta .prices {
