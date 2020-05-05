@@ -595,13 +595,19 @@ margin-bottom: 0px;
 .thumb-content .thumb-meta .prices {
 	display: none;
 }
-
 .thumb-content .category-unit-price {
 	display: none;
 }
-
-.thumb-inner .thumb-content .vat {
+.thumb-content .vat {
 	display: none;
+}
+.availability_1 {
+    background-color: #28a745;
+    color: #fff;
+}
+.availability_5 {
+    background-color: #dc3545;
+    color: #fff;
 }
 
 /* Kategorieansicht Artikelpreis sowie Informationen ausblenden ENDE */
