@@ -8,6 +8,7 @@ use Plenty\Plugin\Templates\Twig;
 use IO\Helper\TemplateContainer;
 use IO\Extensions\Functions\Partial;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
+use Plenty\Modules\Webshop\ItemSearch\Helpers:ResultFieldTemplate;
 use Plenty\Plugin\ConfigRepository;
 
 
@@ -26,6 +27,11 @@ class CeresCoconutServiceProvider extends ServiceProvider
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
     {
+        $resultFieldTemplate = pluginApp(ResultFieldTemplate::class);
+        $resultFieldTemplate->setTemplates([
+            ResultFieldTemplate::TEMPLATE_SINGLE_ITEM    => 'CeresCoconut::ResultFields.SingleItem'
+        ]);
+        
         $enabledOverrides = explode(", ", $config->get("CeresCoconut.templates.override"));
 
         // Override partials
