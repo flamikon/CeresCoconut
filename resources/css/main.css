@@ -574,6 +574,7 @@ margin-bottom: 0px;
 .footer .widget-grid .widget-inner .widget-list {
     color: #FFF;
     background-color: #392F6E;
+    height: 100%;
 }
 
 .footer .widget-grid .widget-inner .widget-list .widget-inner a{
