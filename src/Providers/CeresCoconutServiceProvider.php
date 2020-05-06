@@ -8,7 +8,7 @@ use Plenty\Plugin\Templates\Twig;
 use IO\Helper\TemplateContainer;
 use IO\Extensions\Functions\Partial;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
-use Plenty\Modules\Webshop\ItemSearch\Helpers:ResultFieldTemplate;
+use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 use Plenty\Plugin\ConfigRepository;
 
 
