@@ -10,8 +10,6 @@ use IO\Extensions\Functions\Partial;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 use Plenty\Plugin\ConfigRepository;
 
-//use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
-
 /**
  * Class CeresCoconutServiceProvider
  * @package CeresCoconut\Providers
