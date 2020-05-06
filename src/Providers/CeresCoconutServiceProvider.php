@@ -27,10 +27,6 @@ class CeresCoconutServiceProvider extends ServiceProvider
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
     {
-        $resultFieldTemplate = pluginApp(ResultFieldTemplate::class);
-        $resultFieldTemplate->setTemplates([
-            ResultFieldTemplate::TEMPLATE_SINGLE_ITEM    => 'CeresCoconut::ResultFields.SingleItem'
-        ]);
         
         $enabledOverrides = explode(", ", $config->get("CeresCoconut.templates.override"));
 
@@ -364,5 +360,10 @@ class CeresCoconutServiceProvider extends ServiceProvider
                 $templateContainer->setTemplates($templatesToOverride);
             }, self::PRIORITY);
         }
+        
+        $resultFieldTemplate = pluginApp(ResultFieldTemplate::class);
+        $resultFieldTemplate->setTemplates([
+            ResultFieldTemplate::TEMPLATE_SINGLE_ITEM    => 'CeresCoconut::ResultFields.SingleItem'
+        ]);
     }
 }
