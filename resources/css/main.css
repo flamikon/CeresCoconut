@@ -20,10 +20,8 @@ filter: drop-shadow(0 0 10px rgba(51,51,51,0.2));
 }
 .basket-open {
 	[id=page-header] {
-		> * {
 			filter: none;
 			webkit-filter: none;
-		}
 		}
 }
 /*kann entfernt werden*/
