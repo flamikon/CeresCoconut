@@ -18,12 +18,14 @@ html, body{
 -webkit-filter: drop-shadow(0 0 10px rgba(51,51,51,0.2));
 filter: drop-shadow(0 0 10px rgba(51,51,51,0.2));
 }
+/*kann entfernt werden*/
 #page-header .headwidget_fullw{
 width: 100vw;
 position: relative;
 left: calc(-1 * (100vw - 100%) / 2);
 max-width: none;
 }
+/*kann bis hierhin entfernt werden*/
 #page-header .widget-inner .amikon_headerAdvantage {
     padding: 11px 10px;
     font-weight: 700;
@@ -38,7 +40,7 @@ max-width: none;
     white-space: normal;
     padding: 0 20px 0 5px;
 }
-#page-header .headwidget_fullw .amikon_headerAdvantage .amikon_advantage span a {
+#page-header .widget-fw .amikon_headerAdvantage .amikon_advantage span a {
     color: #fff;
 }
 @media (max-width: 1199px){
