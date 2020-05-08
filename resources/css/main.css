@@ -306,14 +306,14 @@ border-bottom: 1px solid #efefef;
         margin-top: 0px;
         margin-bottom: 0px;
 }
-@screen and (min-width: 1200px)
+@media screen and (min-width: 1200px)
 {
 .footer-main .trust--column {
     width: 24%;
     flex: 0 0 24%;
 }
 }
-@screen and (min-width: 576px)
+@media screen and (min-width: 576px)
 {
 .footer .trust--column {
     width: 49%;
@@ -328,7 +328,7 @@ border-bottom: 1px solid #efefef;
 }
 .footer .trust--columns i {
     font-size: 1.5rem;
-    color: #1dbae7;
+    color: #392F6E;
 }
 [class^="icon--"], [class*=" icon--"] {
     font-family: 'shopware';
@@ -342,8 +342,10 @@ border-bottom: 1px solid #efefef;
     -moz-osx-font-smoothing: grayscale;
 }
 .footer .trust--columns span {
-    font-size: 1.125rem;
     font-weight: 600;
+}
+.footer .trust--columns p {
+    font-size: 0.8rem;
 }
 /*Footer Formatierung ENDE*/
 @media (max-width: 767.98px){
