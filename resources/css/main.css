@@ -306,12 +306,10 @@ border-bottom: 1px solid #efefef;
         margin-top: 0px;
         margin-bottom: 0px;
 }
-@media screen and (min-width: 1200px)
-{
-.footer-main .trust--column {
-    width: 24%;
-    flex: 0 0 24%;
-}
+.footer .trust--column {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0rem .625rem 0rem .625rem;
 }
 @media screen and (min-width: 576px)
 {
@@ -321,10 +319,12 @@ border-bottom: 1px solid #efefef;
     padding: 0rem .625rem 0rem .625rem;
 }
 }
-.footer .trust--column {
-    width: 100%;
-    flex: 0 0 100%;
-    padding: 0rem .625rem 0rem .625rem;
+@media screen and (min-width: 1200px)
+{
+.footer-main .trust--column {
+    width: 24%;
+    flex: 0 0 24%;
+}
 }
 .footer .trust--columns i {
     font-size: 1.5rem;
