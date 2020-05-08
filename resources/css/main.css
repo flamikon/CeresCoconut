@@ -289,6 +289,63 @@ border-bottom: 1px solid #efefef;
 #bannernummero4{
     margin:auto;
 }
+/*Footer Formatierung*/
+.footer .trust--columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dadae5;
+}
+.block-group {
+    zoom: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+}
+@screen and (min-width: 1200px)
+{
+.footer-main .trust--column {
+    width: 24%;
+    flex: 0 0 24%;
+}
+}
+@screen and (min-width: 576px)
+{
+.footer .trust--column {
+    width: 49%;
+    flex: 0 0 49%;
+    padding: 0rem .625rem 0rem .625rem;
+}
+}
+.footer .trust--column {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0rem .625rem 0rem .625rem;
+}
+.footer .trust--columns i {
+    font-size: 1.5rem;
+    color: #1dbae7;
+}
+[class^="icon--"], [class*=" icon--"] {
+    font-family: 'shopware';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.footer .trust--columns span {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+/*Footer Formatierung ENDE*/
 @media (max-width: 767.98px){
 .widget.widget-text .gmapswidget{
 margin-top: 1rem;
