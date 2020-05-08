@@ -311,7 +311,7 @@ border-bottom: 1px solid #efefef;
     flex: 0 0 100%;
     padding: 0rem .625rem 0rem .625rem;
 }
-@media screen and (min-width: 576px)
+@media screen and (min-width: 576px) and (max-width: 1199.9px)
 {
 .footer .trust--column {
     width: 49%;
@@ -321,7 +321,7 @@ border-bottom: 1px solid #efefef;
 }
 @media screen and (min-width: 1200px)
 {
-.footer-main .trust--column {
+.footer .trust--column {
     width: 24%;
     flex: 0 0 24%;
 }
@@ -330,24 +330,16 @@ border-bottom: 1px solid #efefef;
     font-size: 1.5rem;
     color: #392F6E;
 }
-[class^="icon--"], [class*=" icon--"] {
-    font-family: 'shopware';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 .footer .trust--columns span {
     font-weight: 600;
 }
 .footer .trust--columns p {
     font-size: 0.8rem;
 }
-/*Footer Formatierung ENDE*/
+.footer .text--center {
+    text-align: center !important;
+}
+
 @media (max-width: 767.98px){
 .widget.widget-text .gmapswidget{
 margin-top: 1rem;
@@ -358,7 +350,7 @@ margin-top: 1rem;
     background-color: #fff;
 	margin-top: 2rem;
 }
-
+/*Footer Formatierung ENDE*/
 /*Startseite Inhalt*/
 
 .title {
