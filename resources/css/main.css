@@ -322,8 +322,8 @@ border-bottom: 1px solid #efefef;
 @media screen and (min-width: 1200px)
 {
 .footer .trust--column {
-    width: 24%;
-    flex: 0 0 24%;
+    width: 24.5%;
+    flex: 0 0 24.5%;
 }
 }
 .footer .trust--columns i {
@@ -349,6 +349,24 @@ margin-top: 1rem;
     display: block;
     background-color: #fff;
 	margin-top: 2rem;
+}
+.footer .widget-grid .widget-inner .widget-list {
+    color: #FFF;
+    background-color: #392F6E;
+    height: 100%;
+}
+
+.footer .widget-grid .widget-inner .widget-list .widget-inner a{
+    color: #FFF;
+}
+
+.footer .widget-grid .widget-inner .widget-list .widget-inner {
+    padding: 1rem;
+}
+@media (max-width: 767.98px){
+.footer .widget-grid .widget-inner:not(:last-child) .widget-list .widget-inner {
+    padding-bottom: 0;
+}
 }
 /*Footer Formatierung ENDE*/
 /*Startseite Inhalt*/
@@ -629,25 +647,6 @@ margin-bottom: 0px;
 }
 
 /* Startseite Inhalt ENDE */
-
-.footer .widget-grid .widget-inner .widget-list {
-    color: #FFF;
-    background-color: #392F6E;
-    height: 100%;
-}
-
-.footer .widget-grid .widget-inner .widget-list .widget-inner a{
-    color: #FFF;
-}
-
-.footer .widget-grid .widget-inner .widget-list .widget-inner {
-    padding: 1rem;
-}
-@media (max-width: 767.98px){
-.footer .widget-grid .widget-inner:not(:last-child) .widget-list .widget-inner {
-    padding-bottom: 0;
-}
-}
 
 /* Kategorieansicht Artikelpreis sowie Informationen ausblenden */
 
