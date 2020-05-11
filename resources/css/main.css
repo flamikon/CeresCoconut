@@ -24,14 +24,6 @@ filter: drop-shadow(0 0 10px rgba(51,51,51,0.2));
 			webkit-filter: none;
 		}
 }*/
-/*kann entfernt werden*/
-#page-header .headwidget_fullw{
-width: 100vw;
-position: relative;
-left: calc(-1 * (100vw - 100%) / 2);
-max-width: none;
-}
-/*kann bis hierhin entfernt werden*/
 #page-header .widget-inner .amikon_headerAdvantage {
     padding: 11px 10px;
     font-weight: 700;
@@ -56,6 +48,9 @@ max-width: none;
 }
 #page-body .parallax-img-container .parallax-img-container-inner {
 	background-image: none !important;
+}
+.search-input {
+    font-size: 1.2rem;
 }
 /*#mainNavbarCollapsable ul.mainmenu li ul {
     right: 0;
