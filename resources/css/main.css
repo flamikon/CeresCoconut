@@ -213,6 +213,15 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 .list-controls .list-controls-inner {
     background: #efefef;
 }
+.pipe {
+    border-left: 1px solid #b2b1a7;
+    margin: 0 .45em 0 .25em;
+}
+@media (max-width: 575.98px){
+.top-bar .controls-list .pipe {
+    margin: 0 0.3em 0 0;
+}
+}
 .background-breadcrumb{
 	background-color: #efefef;
 }
