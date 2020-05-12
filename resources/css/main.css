@@ -246,8 +246,19 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     padding-left: 0px;
     padding-right: 0px;
 }
+.widget-item-list .widget-caption {
+    padding: 1rem 1.25rem;
+}
 .single .widget-item-list .widget-caption {
     padding: .25rem 1.5rem;
+}
+.startseite .widget-item-list-inline-caption p {
+    padding-top: .6rem;
+    padding-bottom: .4rem;
+    font-size: 1.75rem;
+	margin: 0;
+	font-weight: 500;
+	line-height: 1.1;
 }
 body {
 	background-color: #fff;
