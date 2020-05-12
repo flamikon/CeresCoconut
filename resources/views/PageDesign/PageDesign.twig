@@ -13,10 +13,6 @@
 {% set currencyFormat = config("Ceres.currency.format") %}
 {% set defaultLanguage = webstoreConfig.defaultLanguage %}
 
-{% if request.get('openBasketPreview') == 1 %}
-    {% set openBasketClass = "open-" ~ ceresConfig.basket.previewType %}
-{% endif %}
-
 <!DOCTYPE html>
 
 <html lang="{{ lang }}" data-framework="vue" prefix="og: http://ogp.me/ns#" class="icons-loading">
@@ -42,7 +38,7 @@
     {% endif %}
 </head>
 
-<body class="{{ bodyClasses | join(' ') }}">
+<body class="{{ bodyClasses | join(' ') }} {% if request.get('openBasketPreview') == 1 %} basket-open{% endif %}">
 
 {{ LayoutContainer.show("Ceres::PageDesign.AfterOpeningBodyTag") }}
 
@@ -56,7 +52,7 @@
         document.body.classList.add("no-touch");
     }
 </script>
-<div id="vue-app" class="app{% if openBasketClass is not empty %} {{ openBasketClass }}{% endif %}">
+<div id="vue-app" class="app">
     <!-- messages -->
     <notifications template="#vue-notifications" :initial-notifications="{{ notifications | json_encode() }}"></notifications>
 
@@ -212,7 +208,8 @@
         isCheapestSorting: "{{ services.template.isCheapestSorting() }}",
         initialData: {
             shippingCountries: {{ services.country.getActiveCountriesList() | filterFields(["id", "currLangName", "isoCode2", "states.id", "states.name"]) | json_encode | raw }},
-            shippingCountryId: {{ services.checkout.getShippingCountryId() }}
+            shippingCountryId: {{ services.checkout.getShippingCountryId() }},
+            showNetPrices: {{ showNetPrices | json_encode }}
         },
         features: {}
     };
@@ -276,6 +273,8 @@
             store: window.ceresStore
         });
     }
+    
+    {% if request.get("openBasketPreview") == 1 %}window.ceresStore.dispatch("loadComponent", "basket-preview"){% endif %}
 </script>
 
 {{ get_filtered_tags() }}
