@@ -2,101 +2,59 @@
 {# import "Ceres::Category.Macros.CategoryTree" as Tree #}
 
 <ul class="mainmenu p-0 m-0 d-flex">
-    <li><a href="https://amikon-shop.de">{{ trans("CeresCoconut::Template.headerhome") }}</a></li>
+    <li><a href="{{ trans("CeresCoconut::Template.homelink") }}">{{ trans("CeresCoconut::Template.headerhome") }}</a></li>
+    
     <li class="ddown"><a href="#">{{ trans("CeresCoconut::Template.headercategory") }}</a>
 	<ul data-level="1" id="navDropdown0" class="collapse">
 	<li>
 	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/3d-lasersinter">{{ trans("CeresCoconut::Template.categorylasersinter") }}</a></li>
+	<li class="level1"><a href="/analytische-geraete">Analytische Geräte</a></li>
 	</ul>
 	</li> 
 	<li>
 	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/elektromaterial">{{ trans("CeresCoconut::Template.categoryelektromaterial") }}</a></li>
+	<li class="level1"><a href="/ultraschalltechnik">Ultraschalltechnik</a></li>
 	</ul>
 	</li>
 	<li>
 	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/elektronik">{{ trans("CeresCoconut::Template.categoryelektronik") }}</a></li>
+	<li class="level1"><a href="/messarmaturen">Messarmaturen</a></li>
 	</ul>
 	</li>
 	<li>
 	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/elektronik-gesamt">{{ trans("CeresCoconut::Template.categoryelektronikgesamt") }}</a></li>
+	<li class="level1"><a href="/labor-messgeraete-zubehoer">Labor-Messgeräte & Zubehör</a></li>
 	</ul>
 	</li>
 	<li>
 	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/frequenzumrichter">{{ trans("CeresCoconut::Template.categoryfrequenzumrichter") }}</a></li>
+	<li class="level1"><a href="/spektroskopie">Spektroskopie</a></li>
 	</ul>
 	</li>
 	<li>
 	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/hersteller-siemens">{{ trans("CeresCoconut::Template.categoryherstellersiemens") }}</a></li>
+	<li class="level1"><a href="/chromatographie">Chromatographie</a></li>
 	</ul>
 	</li>
 	<li>
 	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/Laborartikel">{{ trans("CeresCoconut::Template.categorylaborartikel") }}</a></li>
+	<li class="level1"><a href="/labortechnik">Labortechnik</a></li>
 	</ul>
 	</li>
 	<li>
 	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/maschinen">{{ trans("CeresCoconut::Template.categorymaschinen") }}</a></li>
+	<li class="level1"><a href="/laboreinrichtung">Laboreinrichtung</a></li>
 	</ul>
 	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/mess-prueftechnik">{{ trans("CeresCoconut::Template.categorymessundprueftechnik") }}</a></li>
-	</ul>
-	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/motoren-und-antriebe">{{ trans("CeresCoconut::Template.categorymotorenundantriebe") }}</a></li>
-	</ul>
-	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/pneumatik">{{ trans("CeresCoconut::Template.categorypneumatik") }}</a></li>
-	</ul>
-	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/roboter">{{ trans("CeresCoconut::Template.categoryroboter") }}</a></li>
-	</ul>
-	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/sonstige-artikel">{{ trans("CeresCoconut::Template.categorysonstigeartikel") }}</a></li>
-	</ul>
-	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/vakuum-technik">{{ trans("CeresCoconut::Template.categoryvakuumtechnik") }}</a></li>
-	</ul>
-	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/werkstattzubehoer">{{ trans("CeresCoconut::Template.categorywerkstattzubehoer") }}</a></li>
-	</ul>
-	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/werkzeug">{{ trans("CeresCoconut::Template.categorywerkzeug") }}</a></li>
-	</ul>
-	</li>
-	<li>
-	<ul class="nav-dropdown-inner">
-	<li class="level1"><a href="/waerme-klimaschrank">{{ trans("CeresCoconut::Template.categorywaermeklimaschrank") }}</a></li>
-	</ul>
 	</li>
 	</ul>
     </li>
-    <li><a href="/content/versand-zahlung/">{{ trans("CeresCoconut::Template.headershipping") }}</a></li>
-    <li><a href="/privacy-policy">{{ trans("CeresCoconut::Template.headerdatapolicy") }}</a></li>
-    <li><a href="/contact">{{ trans("CeresCoconut::Template.headercontact") }}</a></li>
-    <li><a href="/content/ankaufform">{{ trans("CeresCoconut::Template.headerpurchaseform") }}</a></li>
+    <li><a href="{{ trans("CeresCoconut::Template.shiplink") }}">{{ trans("CeresCoconut::Template.headershipping") }}</a></li>
+    <li><a href="{{ trans("CeresCoconut::Template.datalink") }}">{{ trans("CeresCoconut::Template.headerdatapolicy") }}</a></li>
+    <li><a href="{{ trans("CeresCoconut::Template.contactlink") }}">{{ trans("CeresCoconut::Template.headercontact") }}</a></li>
+    <li><a href="{{ trans("CeresCoconut::Template.purchaselink") }}">{{ trans("CeresCoconut::Template.headerpurchaseform") }}</a></li>
 </ul>
+
 
 {#<ul class="mainmenu">
     {{ Tree.get_nav_bar(

@@ -6,6 +6,7 @@
 {{ component( "Ceres::PageDesign.Components.Popper" ) }}
 {{ component( "Ceres::Customer.Components.ForgotPassword" ) }}
 
+
 {% if isShopBuilder %}
     {% include "Ceres::Widgets.WidgetComponents" %}
 {% endif %}
@@ -13,17 +14,12 @@
 {% set currencyFormat = config("Ceres.currency.format") %}
 {% set defaultLanguage = webstoreConfig.defaultLanguage %}
 
-{% if request.get('openBasketPreview') == 1 %}
-    {% set openBasketClass = "open-" ~ ceresConfig.basket.previewType %}
-{% endif %}
 
 <!DOCTYPE html>
 
 <html lang="{{ lang }}" data-framework="vue" prefix="og: http://ogp.me/ns#" class="icons-loading">
-
 <head>
-	{{ get_consent_scripts(ceresConfig.global.blockCookies) }}
-
+	 {{ get_consent_scripts(ceresConfig.global.blockCookies) }}
     {% include getPartial('head') %}
 
     {% block PartialHead %}
@@ -34,15 +30,16 @@
         {% include styleTemplate.path ignore missing with styleTemplate.params %}
     {% endfor %}
     
-    {% if assetName == 'ceres-checkout' %}
+     {% if assetName == 'ceres-checkout' %}
         {{ LayoutContainer.show("Ceres::Checkout.Styles") }}
     {% endif %}
     {% if services.template.getCurrentTemplate() == "tpl.item" %}
         {{ LayoutContainer.show("Ceres::SingleItem.Styles") }}
     {% endif %}
+    
 </head>
 
-<body class="{{ bodyClasses | join(' ') }}">
+<body class="{{ bodyClasses | join(' ') }} {% if request.get('openBasketPreview') == 1 %} basket-open{% endif %}">
 
 {{ LayoutContainer.show("Ceres::PageDesign.AfterOpeningBodyTag") }}
 
@@ -56,19 +53,19 @@
         document.body.classList.add("no-touch");
     }
 </script>
-<div id="vue-app" class="app{% if openBasketClass is not empty %} {{ openBasketClass }}{% endif %}">
+<div id="vue-app" class="app">
     <!-- messages -->
     <notifications template="#vue-notifications" :initial-notifications="{{ notifications | json_encode() }}"></notifications>
 
-    {% include getPartial('header') %}
+       {% include getPartial('header') %}
 
         <div id="page-body" class="main">
         {% block PageBody %}{% endblock %}
     </div>
 
-    {% include getPartial('footer') %}
+         {% include getPartial('footer') %}
 
-    {% block PartialFooter %}{% endblock %}
+     {% block PartialFooter %}{% endblock %}
 
     <!-- LOGIN MODAL -->
     <div id="login-modal-wrapper">
@@ -89,10 +86,10 @@
                 </div>
             </div>
         </div>
-    </div>
+     </div>
     <!-- ./LOGIN MODAL -->
 
-    <!-- REGISTRATION MODAL -->
+        <!-- REGISTRATION MODAL -->
     <div id="simple-registration-modal-wrapper">
         <div class="modal fade" id="registration" tabindex="-1" role="dialog">
             <div class="modal-dialog">
@@ -125,21 +122,21 @@
 
                             <button type="button" class="close ml-0" data-dismiss="modal" aria-hidden="true">&times;</button>
                         </div>
-                        <div class="modal-body">
-                            <registration :is-simple-registration="true" modal-element="simple-registration-modal-wrapper">
+ 						<div class="modal-body">
+								<registration :is-simple-registration="true" modal-element="simple-registration-modal-wrapper">
                                 <template #extend-overlay-buttons>
                                     {{ LayoutContainer.show("Ceres::RegistrationOverlay.ExtendOverlayButtons") }}
                                 </template>
                                 <template #custom-address-fields>
                                     {{ LayoutContainer.show("Ceres::Checkout.CustomAddressField") }}
                                 </template>
-                            </registration>
-                        </div>
+                            </registration>                        
+                         </div>
                     </div>
-                </lazy-load>
+               </lazy-load>
             </div>
         </div>
-    </div>
+        </div>
     <!-- ./REGISTRATION MODAL -->
 
     <!-- BASKET MODAL -->
@@ -160,9 +157,7 @@
             </template>
         </forgot-password-modal>
     </lazy-load>
-    <!-- ./PASSWORD RESET MODAL -->
 
-    <!-- SHIPPINGCOSTS MODAL -->
     {% if ceresConfig.global.shippingCostsCategoryId > 0 %}
     <div id="shippingscosts-modal-wrapper">
         <div class="modal fade" id="shippingscosts" tabindex="-1" role="dialog">
@@ -183,9 +178,9 @@
                 </div>
             </div>
         </div>
+    </div>
     {% endif %}
     <!-- ./SHIPPINGCOSTS MODAL -->
-    </div>
 </div>
 
 <script>
@@ -212,11 +207,13 @@
         isCheapestSorting: "{{ services.template.isCheapestSorting() }}",
         initialData: {
             shippingCountries: {{ services.country.getActiveCountriesList() | filterFields(["id", "currLangName", "isoCode2", "states.id", "states.name"]) | json_encode | raw }},
-            shippingCountryId: {{ services.checkout.getShippingCountryId() }}
+            shippingCountryId: {{ services.checkout.getShippingCountryId() }},
+            showNetPrices: {{ showNetPrices | json_encode }}
         },
         features: {}
     };
 </script>
+
 
 {{ Loader.include_components() }}
 
@@ -227,9 +224,9 @@
 {{ get_json_data() }}
 
 {% if ceresConfig.log.performanceLevel  == 'development' %}
-    <script src="{{ plugin_path('Ceres') }}/js/dist/{{ assetName }}.js?v={{ buildHash }}"></script>
-{% else %}
-    <script src="{{ plugin_path('Ceres') }}/js/dist/{{ assetName }}.min.js?v={{ buildHash }}"></script>
+     <script src="{{ plugin_path('Ceres') }}/js/dist/{{ assetName }}.js?v={{ buildHash }}"></script>
+     {% else %}
+     <script src="{{ plugin_path('Ceres') }}/js/dist/{{ assetName }}.min.js?v={{ buildHash }}"></script>
 {% endif %}
 
 {% for scriptTemplate in get_additional_scripts() %}
@@ -249,10 +246,13 @@
     {{ LayoutContainer.show("Ceres::SingleItem.AfterScriptsLoaded") }}
 {% endif %}
 
+
 <script>
+
 	window.__loadPluginChunk = function(source) {
         return source += "?v={{ buildHash }}";
     };
+
 
     window.vueEventHub = new Vue();
     if (App.config.log.checkSyntax)
@@ -276,6 +276,8 @@
             store: window.ceresStore
         });
     }
+    
+    {% if request.get("openBasketPreview") == 1 %}window.ceresStore.dispatch("loadComponent", "basket-preview"){% endif %}
 </script>
 
 {{ get_filtered_tags() }}

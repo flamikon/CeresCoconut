@@ -7,6 +7,7 @@
 {% set currencyFormat = config("Ceres.currency.format") %}
 {% set currencyFormatSelect = config("Ceres.currency.format_selection") %}
 
+
 {% set headerContainer = LayoutContainer.show("Ceres::Header") | trim %}
 {% if headerContainer is empty %}
     {% include "CeresCoconut::PageDesign.Partials.Header.DefaultHeader" %}
@@ -42,13 +43,12 @@
     {% else %}
         {% set initialCategory = category %}
     {% endif %}
-    
-    {# set the initialCategory to the default category of the current item #}
+        {# set the initialCategory to the default category of the current item #}
     {% if services.template.isCurrentTemplate("tpl.item") and defaultCategory is not null %}
         {% set initialCategory = defaultCategory %}
     {% elseif services.template.isCurrentTemplate('tpl.home.category') %}
         {% set initialCategory = null %}
     {% endif %}
 
-    <mobile-navigation :initial-category="{{ initialCategory | json_encode }}" :include-language="{{ urls.includeLanguage | json_encode }}"></mobile-navigation>
+     <mobile-navigation :initial-category="{{ initialCategory | json_encode }}" :include-language="{{ urls.includeLanguage | json_encode }}"></mobile-navigation>
 </div>

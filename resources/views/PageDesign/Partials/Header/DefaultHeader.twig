@@ -12,7 +12,7 @@
 									<div class="col-12 amikon_headerAdvantage">
 										<div class="amikon_advantage">
 											<i class="fa fa-check"></i> 
-											<span>{{ trans("CeresCoconut::Template.questions") }} <a href="tel:+492861685300">+49 2861 – 68 53 00</a></span>
+											<span>{{ trans("CeresCoconut::Template.questions") }} <a href="tel:+49 2861 89 23 505">+49 2861 89 23 505</a></span>
 										</div> 
 										<div class="amikon_advantage">
 											<i class="fa fa-check"></i> 
@@ -60,6 +60,7 @@
                                                 	</a>
                                             	</user-login-handler>
                                         	</li>
+                                        	{#
 											<li class="list-inline-item dropdown control-languages">
                                             	<a class="nav-link"
                                                	data-toggle="collapse"
@@ -82,6 +83,7 @@
                                                 	</a>
                                             	</li>
                                         	{% endif %}
+                                        	#}
 											{% if services.url.isRouteEnabled("wish-list") %}
                                             	<li class="list-inline-item control-wish-list">
                                                 	<wish-list-count>

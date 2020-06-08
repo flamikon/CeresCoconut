@@ -6,11 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="plentymarkets" />
 
-{% if ceresConfig.global.favicon is empty %}
-    {% set favicon = url ~ '/tpl/favicon_' ~ webstoreConfig.webstoreId ~ '.ico' %}
-{% else %}
-    {% set favicon = ceresConfig.global.favicon %}
-{% endif %}
+
+
+<link rel="icon" type="img/ico" href="https://cdn02.plentymarkets.com/7ukspn3affoc/frontend/Selftec/images/favicon_1.ico">
 
 <link rel="icon" type="img/ico" href="{{ favicon }}">
 
@@ -18,7 +16,7 @@
 {% set languageUrls = services.url.getLanguageURLs() %}
 
 {% if canonicalUrl is not null %}
-    <link rel="canonical" href="{{ canonicalUrl  ~ services.url.getCanonicalQueryString() }}">
+         <link rel="canonical" href="{{ canonicalUrl  ~ services.url.getCanonicalQueryString() }}">
 {% endif %}
 
 {% if services.url.isCanonical() %}
@@ -37,33 +35,36 @@
         }
     %}
     {% if customFont.regular %}
-    @font-face {
+            @font-face {
         font-family: "Custom-Font";
         src: url("{{ customFont.regular }}");
     }
     {% endif %}
     {% if customFont.bold %}
-    @font-face {
+        @font-face {
         font-family: "Custom-Font";
         src: url("{{ customFont.bold }}");
         font-weight: bold;
-    }
+        }
     {% endif %}
     {% if customFont.italic %}
-    @font-face {
+         @font-face {
         font-family: "Custom-Font";
         src: url("{{ customFont.italic }}");
         font-style: italic;
     }
     {% endif %}
     {% if customFont.boldItalic %}
-    @font-face {
+            @font-face {
         font-family: "Custom-Font";
         src: url("{{ customFont.boldItalic }}");
         font-weight: bold;
         font-style: italic;
     }
     {% endif %}
+    
+     {# FIX: do not display icons until fontawesome is loaded #}
+    .icons-loading .fa { visibility: hidden !important; }
 </style>
 
 {% set iconCSS = plugin_path("Ceres") ~ "/css/ceres-icons.css" %}
@@ -72,12 +73,15 @@
 {# fallback for disabled javascript #}
 <noscript><link rel="stylesheet" href="{{ iconCSS }}"></noscript>
 
+
 {% set defaultCSS = plugin_path("Ceres") ~ "/css/" ~ assetName ~ ".css?v=" ~ buildHash %}
 {% set defaultSCSS = plugin_path("Ceres") ~ "/css/" ~ assetName ~ ".scss?v=" ~ buildHash %}
 
+
+
 <link rel="preload" as="style" href="{{ defaultCSS }}">
 {% if LayoutContainer.show("Ceres::Template.StyleOverwrite") | trim is empty %}
-    <link rel="stylesheet" href="{{ defaultCSS }}"{% if isShopBuilder %} data-sass-root="{{ plugin_path('Ceres') }}" data-sass-original="{{ defaultSCSS }}"{% endif %}>
+     <link rel="stylesheet" href="{{ defaultCSS }}"{% if isShopBuilder %} data-sass-root="{{ plugin_path('Ceres') }}" data-sass-original="{{ defaultSCSS }}"{% endif %}>
 {% endif %}
 
 {% if isShopBuilder %}
@@ -203,6 +207,8 @@
         document.documentElement.classList.remove('icons-loading');
     }
 </script>
+
+
 
 {{ LayoutContainer.show("Ceres::Template.StyleOverwrite") }}
 
