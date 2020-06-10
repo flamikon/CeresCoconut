@@ -16,6 +16,13 @@
     "dataProviders"     :
     [
         {
+            "key"           :"CeresCoconut\\Containers\\CeresCoconutCategoryItemVueTemplateContainer",
+            "name"          :"Container for CategoryItem Component Template",
+            "description"   :"Container for CategoryItem Component Template",
+            "defaultLayoutContainer": "Ceres::Script.AfterScriptsLoaded"
+        }
+        
+        {
             "key"           :"CeresCoconut\\Containers\\CeresCoconutContainer",
             "name"          :"Stylesheet",
             "description"   :"Add changes to the CSS file"
