@@ -20,7 +20,7 @@
             "name"          :"Container for CategoryItem Component Template",
             "description"   :"Container for CategoryItem Component Template",
             "defaultLayoutContainer": "Ceres::Script.AfterScriptsLoaded"
-        }
+        },
         
         {
             "key"           :"CeresCoconut\\Containers\\CeresCoconutContainer",
