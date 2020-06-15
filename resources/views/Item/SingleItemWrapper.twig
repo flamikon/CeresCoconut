@@ -7,12 +7,11 @@
 
     {% set itemData = item.documents[0].data %}
     
-      {% if queryString() | length > 0 %}
+    {% if queryString() | length > 0 %}
         {% set robotsValue = 'NOINDEX' %}
     {% else %}
         {% set robotsValue = 'ALL' %}
     {% endif %}
-    
     {% embed getPartial('page-metadata') %}
         {% block title          ItemName.get(itemData | itemName, itemData.variation.bundleType) %}
         {% block description    itemData.texts.metaDescription %}
@@ -40,7 +39,7 @@
                     "priceCurrency" : "{{ itemData.prices.default.currency }}",
                     "price"         : "{{ itemData.prices.default.price.value | number_format(2, '.', '') }}",
                     "url"           : "{{ requestedVariationUrl }}",
-					{% if itemData.prices.default.baseLot > 0 %}
+{% if itemData.prices.default.baseLot > 0 %}
                     "priceSpecification": {
                         "@type": "UnitPriceSpecification",
                         "price": "{{ itemData.prices.default.price.value | number_format(2, '.', '') }}",
@@ -51,7 +50,7 @@
                             "unitCode": "{{ itemData.unit.unitOfMeasurement }}"
                         }
                     },
-                    {% endif %}
+{% endif %}
                     "availability"  : "{{ itemData.variation.availability.mappedAvailability }}",
                     "itemCondition" : "{{ itemData.item.condition.names.name }}",
                     "serialNumber"  : "{{ itemData.variation.number }}"
@@ -84,21 +83,21 @@
     {% set currentCategory = services.category.getCurrentCategory() %}
 
     {% if currentCategory is defined %}
-                 {% set shopBuilderTemplate = shop_builder_category_template(currentCategory.id, isItemSet ? "itemset" : "singleitem") %}
+        {% set shopBuilderTemplate = shop_builder_category_template(currentCategory.id, isItemSet ? "itemset" : "singleitem") %}
     {% endif %}
 
     {% if item.documents[0].data.item.add_cms_page > 0 and not isShopBuilder %}
         {# Item template is configured for the item #}
-   {% set template %}
+        {% set template %}
             {% include [category_template( item.documents[0].data.item.add_cms_page, lang, webstoreConfig.webstoreId ), "CeresCoconut::Item.SingleItemView"] %}
         {% endset %}
 
-        	{% if template | trim is not empty %}
-            	{{ template }}
-        	{% else %}
-            	{% include "Ceres::Item.SingleItemView" %}
-        	{% endif %}
-        
+        {% if template | trim is not empty %}
+            {{ template }}
+        {% else %}
+            {% include "Ceres::Item.SingleItemView" %}
+        {% endif %}
+
     {% elseif shopBuilderTemplate | trim is not empty or isShopBuilder %}
         {# Shopbuilder template #}
         <div class="single container-max page-content">
