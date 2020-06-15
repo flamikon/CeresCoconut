@@ -589,6 +589,15 @@ margin-bottom: 0px;
 /* Startseite Inhalt ENDE */
 
 /* Kategorieansicht Artikelpreis sowie Informationen ausblenden */
+
+.is-single-piece{
+	display: none;
+}	
+	
+.base-price-value{
+	display: none;
+}	
+	
 .base-price {
 	display: none;
 }
