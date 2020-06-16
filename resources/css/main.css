@@ -588,10 +588,8 @@ margin-bottom: 0px;
 
 /* Startseite Inhalt ENDE */
 
-/* Kategorieansicht/item Artikelpreis sowie Informationen ausblenden */
-.my-3{
-	display: none;
-}	
+/* Kategorieansicht/itemAnsicht Artikelpreis sowie Informationen ausblenden */
+
 .is-single-piece{
 	display: none;
 }		
