@@ -617,5 +617,10 @@ margin-bottom: 0px;
     color: #fff;
 }
 
+.category-description {
+	background-color: #396 !important;
+	color: #fff !important;
+}
 
 /* Kategorieansicht Artikelpreis sowie Informationen ausblenden ENDE */
+
