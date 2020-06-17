@@ -35,6 +35,7 @@
             "name"          :"Third item list",
             "description"   :"Display a configurable list of items in your online store"
         },
+	    
 	{
             "key"           :"CeresCoconut\\Containers\\CeresCoconutCategoryItemVueTemplateContainer",
             "name"          :"Container for CategoryItem Component Template",
