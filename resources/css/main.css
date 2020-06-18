@@ -625,15 +625,17 @@ margin-bottom: 0px;
 	border: 0px solid #000000;
 	padding-left: 20px;
 	padding-right: 20px;
+	margin-top: -15px;
 }
 .parallax-img-container .parallax-text-container h1{
 	background-color: #396;
 	color: #fff;
-	-webkit-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 10px 10px;
 	border: 0px solid #000000;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-top: 275px;
+	padding-bottom: 15px;
 }
 
 /* Kategorieansicht Artikelpreis sowie Informationen ausblenden ENDE */
