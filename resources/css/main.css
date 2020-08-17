@@ -525,8 +525,8 @@ margin-top: 1rem;
     margin: 0;
     text-shadow: 0 0 10px #000;
 }
-@media (max-width: 576px)
-{
+
+@media (max-width: 576px){
 .owl-theme .owl-dots{
 display:none;
 }
@@ -538,6 +538,7 @@ display:none;
     font-size: 1rem !important;
 	}
 }
+
 @media (max-width: 479px){
 .contentboxwrapper .textwrapper p{
 display: none;
