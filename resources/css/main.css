@@ -531,6 +531,12 @@ margin-top: 1rem;
 display:none;
 }
 
+.carousel-item .textwrapper .hometitle2 {
+    font-size: 1.3rem !important;
+	}
+.carousel-item .textwrapper .homeparagraph2 {
+    font-size: 1rem !important;
+	}
 }
 @media (max-width: 479px){
 .contentboxwrapper .textwrapper p{
