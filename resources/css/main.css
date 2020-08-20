@@ -537,6 +537,10 @@ display:none;
 .carousel-item .textwrapper .homeparagraph2 {
     font-size: 1rem !important;
 	}
+.d1{
+	margin-bottom: 10px;
+}
+	
 }
 
 @media (max-width: 479px){
