@@ -62,7 +62,7 @@ filter: drop-shadow(0 0 10px rgba(51,51,51,0.2));
     width: 100%;
     height: 120%;
 	}
-	carousel-item .textwrapper .hometitle2 {
+	.carousel-item .textwrapper .hometitle2 {
     font-size: 1.5rem !important;
 }
 }
