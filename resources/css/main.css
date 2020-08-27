@@ -540,7 +540,9 @@ display:none;
 .d1{
 	margin-bottom: 10px;
 }
-	
+	.widget-image-carousel.widget-primary .carousel-control .fa {
+    display: none;
+	}
 }
 
 @media (max-width: 479px){
