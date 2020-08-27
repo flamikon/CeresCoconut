@@ -65,6 +65,9 @@ filter: drop-shadow(0 0 10px rgba(51,51,51,0.2));
 	.carousel-item .textwrapper .hometitle2 {
     font-size: 1.5rem !important;
 }
+.widget-image-carousel.widget-primary .carousel-control .fa {
+    display: none;
+	}
 }
 /*#mainNavbarCollapsable ul.mainmenu li ul {
     right: 0;
