@@ -613,7 +613,7 @@ margin-top: 1rem;
 }
 
 .contentboxwrapper .textwrapper h2, .contentboxwrapper .textwrapper h3, .carousel-item .textwrapper h2, .carousel-item .textwrapper h3 {
-    font-size: 1.1rem !important;
+    font-size: 1.1rem ;
     font-weight: bold !important;
     margin: 0;
     text-shadow: 0 0 10px #000;
