@@ -557,6 +557,24 @@ display: none;
 }
 }
 
+@media (max-width: 320px){
+.controls-list{
+margin-left: 10px;
+	
+}
+.carousel-item .textwrapper .hometitle2 {
+    font-size: 0.8rem !important;
+}
+	
+.carousel-item .textwrapper .homeparagraph2 {
+    font-size: 0.8rem !important;
+}
+.navbar-brand img {
+    max-height: 4rem;
+}	
+}
+
+
 .contentboxwrapper .imagewrapper {
 background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(top, #fff 70%, #000 100%); /* FF3.6-15 */
