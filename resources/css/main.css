@@ -571,7 +571,13 @@ margin-left: 10px;
 }
 .navbar-brand img {
     max-height: 4rem;
-}	
+}
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-max {
+    width: 101%;
+    margin-right: auto;
+    margin-left: auto;
+}
+	
 }
 
 
