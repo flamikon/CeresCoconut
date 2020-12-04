@@ -312,6 +312,14 @@ margin-top: 1rem;
   display: block;
   word-break: break-word;
 }
+
+.title2 {
+  padding-left: 8px;
+  font-size: 2.5rem;
+  letter-spacing: 1.25px;
+  display: block;
+  word-break: break-word;
+}
 @media (max-width:1025px){
 .single .row .col-12 .sticky-element .title{
 	padding-left: 8px;
