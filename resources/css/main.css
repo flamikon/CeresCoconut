@@ -592,6 +592,14 @@ margin-left: 10px;
 	
 }
 
+.widget-proportional .widget-inner {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    bottom: -15px;
+    left: -10px;
+}
+
 
 .contentboxwrapper .imagewrapper {
 background: #ffffff; /* Old browsers */
