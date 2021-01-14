@@ -53,6 +53,9 @@ filter: drop-shadow(0 0 10px rgba(51,51,51,0.2));
 .search-input {
     font-size: 1.2rem;
 }
+.widget-text.widget {
+    margin-bottom: 2rem;
+}
 /* Artikelansicht Slider Punkte auf Mobilansicht ausblenden */
 @media (max-width: 575.01px){
 .owl-theme .owl-dots {
