@@ -40,6 +40,10 @@
 
 <!-- Global site tag (gtag.js) - Google Ads: 1009340211 --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1009340211"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-1009340211'); </script> 
+
+
+<script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-1009340211/3U7WCKbywvMBELOepeED', 'event_callback': callback }); return false; } </script> 
+
 </head>
 
 <body class="{{ bodyClasses | join(' ') }} {% if request.get('openBasketPreview') == 1 %} basket-open{% endif %}">
