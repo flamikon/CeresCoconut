@@ -76,14 +76,11 @@
 
     {% if "email" in showData or showData == 'all' %}
 		<p class="my-0">
-            <a class="text-dark" href="mailto:{{ email }}">
-                <i class="fa fa-envelope fa-fw mr-2" aria-hidden="true"></i>
-                <span class="d-inline-block">{{ email }}</span>
-            </a>
+            <a onclick="return gtag_report_conversion('info@amikon.de');" href="info@amikon.de">info@amikon.de</a>
 		</p>
     {% endif %}
     
-<a onclick="return gtag_report_conversion('info@amikon.de');" href="info@amikon.de">info@amikon.de</a>
+
 
 
 
