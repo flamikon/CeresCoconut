@@ -291,6 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
     }
     
+    {% if request.get("openBasketPreview") == 1 %}window.ceresStore.dispatch("loadComponent", "basket-preview"){% endif %}
     {% if request.get("show") == "forgotPassword" %}window.ceresStore.dispatch("loadComponent", "forgot-password-modal"){% endif %}
 </script>
 
