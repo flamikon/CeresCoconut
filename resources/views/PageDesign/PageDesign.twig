@@ -220,7 +220,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "shippingCountryId": {{ services.checkout.getShippingCountryId() }},
             "showNetPrices": {{ showNetPrices | json_encode }}
         },
-            "features": {}
+        "features": {},
+        "languageMap": {{ webstoreConfig.browserLanguage | json_encode | raw }}
     }
 </script>
 <!-- /SSR -->
