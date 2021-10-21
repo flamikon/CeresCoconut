@@ -20,6 +20,7 @@
 
 <html lang="{{ lang }}" data-framework="vue" prefix="og: http://ogp.me/ns#" class="icons-loading">
 <head>
+{{ LayoutContainer.show("Ceres::PageDesign.AfterOpeningHeadTag") }}
 	 {{ get_consent_scripts(ceresConfig.global.blockCookies) }}
     {% include getPartial('head') %}
 
