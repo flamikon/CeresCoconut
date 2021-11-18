@@ -59,6 +59,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 {{ LayoutContainer.show("Ceres::PageDesign.AfterOpeningBodyTag") }}
 
+<script>
+    if('ontouchstart' in document.documentElement)
+    {
+        document.body.classList.add("touch");
+    }
+    else
+    {
+        document.body.classList.add("no-touch");
+    }
+</script>
+
 <!-- SSR:app() -->
 <div id="vue-app" class="app">
     {{ context.renderState() }}
@@ -230,7 +241,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 </script>
 <!-- /SSR -->
-<script>window.App = JSON.parse(document.getElementById("app-data").innerText);</script>
+<script>
+    window.App = JSON.parse(document.getElementById("app-data").innerText);
+    window.__loadPluginChunk = function(source) {
+        return source += "?v={{ buildHash }}";
+    };
+</script>
 
 {{ Loader.include_components() }}
 
@@ -276,10 +292,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- SSR:off() -->
 
 <script>
-	window.__loadPluginChunk = function(source) {
-        return source += "?v={{ buildHash }}";
-    };
-
     window.vueEventHub = new Vue();
     if (App.config.log.checkSyntax)
     {
