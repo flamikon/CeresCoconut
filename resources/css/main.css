@@ -721,6 +721,6 @@ margin-bottom: 0px;
 
 /* Artikelansicht ENDE */
 
-#CfourContainerPopupModal .modal-dialog .button.close {
+#CfourContainerPopupModal .modal-dialog button.close {
 	display: none;
 }
