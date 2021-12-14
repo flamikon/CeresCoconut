@@ -699,6 +699,14 @@ margin-bottom: 0px;
 .availability_5 {
     background-color: #dc3545;
     color: #fff;
+    font-size: 100%;
+    display: inline;
+}
+.widget-availability span.availability.badge.availability-5 {
+	background-color: #dc3545;
+    color: #fff;
+    font-size: 150%;
+    display: inherit;
 }
 
 /* Kategorieansicht Artikelpreis sowie Informationen ausblenden ENDE */
