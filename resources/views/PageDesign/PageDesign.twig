@@ -83,8 +83,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% block PageBody %}{% endblock %}
     </div>
 
-    {% include getPartial('footer') %}
-    {% block PartialFooter %}{% endblock %}
+    {% cacheblock %}
+        {% include getPartial('footer') %}
+        {% block PartialFooter %}{% endblock %}
+    {% endcacheblock %}
 
     <!-- LOGIN MODAL -->
     <div id="login-modal-wrapper">
