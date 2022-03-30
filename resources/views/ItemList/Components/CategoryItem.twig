@@ -82,6 +82,7 @@
                                 </template>
                                 <template v-else-if="itemGraduatedPricesalableVariationCount">
                                     ${ $translate("Ceres::Template.categoryItemFromPrice", { price: itemPriceGraduated }) } ${ $translate("Ceres::Template.categoryItemFootnote") }
+				</template>
                                 <template v-else>
                                     ${ item.prices.default.unitPrice.formatted | specialOffer(item.prices, "unitPrice", "formatted") } ${ $translate("Ceres::Template.categoryItemFootnote") }
                                 </template>
