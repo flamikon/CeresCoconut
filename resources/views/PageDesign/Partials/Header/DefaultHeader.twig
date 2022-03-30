@@ -94,7 +94,7 @@
                                                 	</wish-list-count>
                                             	</li>
                                         	{% endif %}
-											<li class="list-inline-item control-basket position-relative" @mouseover.once="$store.dispatch('loadComponent', 'basket-preview')">
+											<li class="list-inline-item control-basket position-relative">
                                             	<a v-toggle-basket-preview href="#" class="toggle-basket-preview nav-link">
                                                 	{% if config("Ceres.header.basket_values") != "sum" %}
                                                     	<span class="mr-2" v-basket-item-quantity="$store.state.basket.data.itemQuantity">0</span>
@@ -208,7 +208,9 @@
 		</div>
 </header>
 
-<!-- breadcrumb -->
-{% if not services.template.isHome() and not services.template.isMyAccount() and not services.template.isCheckout() %}
-    {% include "CeresCoconut::PageDesign.Partials.Header.Breadcrumb" %}
-{% endif %}
+ {% cacheslot breadcrumbs %}
+                    {# breadcrumbs are related to every single page so they need to be wrapped in a cache slot #}
+                    {% if not services.template.isHome() and not services.template.isMyAccount() and not services.template.isCheckout() %}
+                        {% include "Ceres::PageDesign.Partials.Header.Breadcrumb" %}
+                    {% endif %}
+                {% endcacheslot %}
