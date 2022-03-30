@@ -86,7 +86,11 @@
           
 
              
-                <item-filter-tag-list></item-filter-tag-list>
+                {# TAGS #}
+                <lazy-hydrate when-idle>
+                 <item-filter-tag-list :facet-data="{{ facets | json_encode }}"></item-filter-tag-list>
+                </lazy-hydrate>
+
             </div>
 
               {% if ceresConfig.pagination.position in ['top', 'top_bottom'] %}
@@ -101,7 +105,7 @@
 
             {% endif %}
 
-           <div class="row">
+                    <div class="row">
 
                 {% if category is defined and ceresConfig.header.showNavBars in ["side", "both"] %}
                     <div class="col-3 d-none d-lg-block">
@@ -109,31 +113,27 @@
                             <div class="category-title">{{ trans("Ceres::Template.itemCategories") }}</div>
                             {{ include('Ceres::PageDesign.Partials.Header.SideNavigation.twig') }}
                         </div>
-
                         {{ LayoutContainer.show("Ceres::CategoryItem.SideNavBarBottom") }}
                     </div>
-                    
-               
                 {% endif %}
-            
-
-        <div class="col-12 col-lg-{% if category is defined and ceresConfig.header.showNavBars in ["side", "both"] %}9{% else %}12{% endif %}">
+                <div class="col-12 col-lg-{% if category is defined and ceresConfig.header.showNavBars in ["side", "both"] %}9{% else %}12{% endif %}">
                     {% if itemList is not empty %}
                         <ul class="product-list row grid">
                             {% for item in itemList %}
-                                <li class="col-12 col-sm-6 col-md-4 col-lg-{% if category is defined and ceresConfig.header.showNavBars in ["side", "both"] %}4{% else %}3{% endif %}">
-                                    <category-item
-                                        item-data-ref="{{ item.data | json_data }}"
-                                        :decimal-count="{{ ceresConfig.item.storeSpecial }}">
-                                        <template #before-prices>{{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}</template>
-                                        <template #after-prices>{{ LayoutContainer.show("Ceres::CategoryItem.AfterPrices", item.data) }}</template>
+          {% cacheblock use "variation." ~ item.data.variation.id %}
+                                    <li class="col-12 col-sm-6 col-md-4 col-lg-{% if category is defined and ceresConfig.header.showNavBars in ["side", "both"] %}4{% else %}3{% endif %}">
+                                        <category-item :decimal-count="{{ ceresConfig.item.storeSpecial }}">
+                                            <template #before-prices>{{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}</template>
+                                            <template #after-prices>{{ LayoutContainer.show("Ceres::CategoryItem.AfterPrices", item.data) }}</template>
+                                            <template #item-data>{{ item.data | json_encode | e }}</template>
 
-                                        <a href="{{ item.data | itemURL }}" class="small">
-                                            <i class="fa fa-image"></i>
-                                            <span>{{ item.data | itemName }}</span>
-                                        </a>
-                                    </category-item>
-                                </li>
+                                            <a href="{{ item.data | itemURL }}" class="small">
+                                                <i class="fa fa-image"></i>
+                                                <span>{{ item.data | itemName }}</span>
+                                            </a>
+                                        </category-item>
+                                    </li>
+                                {% endcacheblock %}
                             {% endfor %}
                         </ul>
                     {% endif %}
