@@ -72,7 +72,7 @@
 
                             <div class="price">
                                 <template v-if="item.item.itemType === 'set'">
-                                    ${ trans("Ceres::Template.itemSetPrice", {"price": "${itemSetPrice}"}) } ${ $translate("Ceres::Template.categoryItemFootnote") }
+                                    ${ $translate("Ceres::Template.itemSetPrice", { price: itemSetPrice }) } ${ $translate("Ceres::Template.categoryItemFootnote") }
                                 </template>
                                  <template v-else-if="itemGraduatedPriceisCheapestSorting">
                                     ${ $translate("Ceres::Template.categoryItemFromPrice", { price: itemPriceGraduated }) } ${ $translate("Ceres::Template.categoryItemFootnote") }
