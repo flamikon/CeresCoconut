@@ -117,7 +117,11 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 	min-width: 0;
 	list-style: none;
 	padding: 0;
-	z-index: 20;
+	z-index: 98; /* Ursprünglich z-index 20 */
+	-webkit-hyphens: auto;
+ 	-moz-hyphens: auto;
+ 	-ms-hyphens: auto;
+ 	hyphens: auto;
 }
 @media (max-width: 1100px){
 	.main-navbar-collapsable ul.mainmenu li  ul#navDropdown0 {
