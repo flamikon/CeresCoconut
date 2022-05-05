@@ -245,12 +245,17 @@
 }
 .widget-item-list .widget-caption {
     padding: 1rem 1.25rem;
+    margin-top: 10px;
 }
 body {
 	background-color: #fff;
 }
 body #vue-app, #vue-error {
 		background-color: #fff;
+}
+
+.widget-text.widget {
+  margin-bottom: 2rem;
 }
 
 
