@@ -30,11 +30,11 @@
     var vueApp = document.getElementById("vue-app");
     var pageHeader = document.getElementById("page-header");
 
-    if ( !!vueApp && !!pageHeader )
+    //if ( !!vueApp && !!pageHeader )
     {
         vueApp.style.marginTop = pageHeader.getBoundingClientRect().height + 'px';
     }
-
+//
     var scriptElement = document.getElementById("{{ scriptId }}");
     scriptElement.parentElement.removeChild(scriptElement);
 </script>
