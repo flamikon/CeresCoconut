@@ -49,18 +49,16 @@
 									<div class="controls">
 										<ul id="controlsList" class="controls-list mb-0 d-flex list-inline pl-2 pl-sm-1 pl-md-0">
                                         	<li class="list-inline-item control-user">
-                                            	<client-only>
-                                                <user-login-handler>
-                                                    <a class="nav-link" data-toggle="modal" aria-label="{{ trans('Ceres::Template.login') }}">
-                                                        <i class="fa fa-user mr-0 mr-sm-1" aria-hidden="true"></i>
-                                                        <span class="d-none d-sm-inline">{{ trans("Ceres::Template.login") }}</span>
-                                                    </a>
-                                                    <a class="nav-link" data-toggle="modal" aria-label="{{ trans('Ceres::Template.loginRegister') }}">
-                                                        <i class="fa fa-user-plus mr-0 mr-sm-1" aria-hidden="true"></i>
-                                                        <span class="d-none d-sm-inline">{{ trans("Ceres::Template.loginRegister") }}</span>
-                                                    </a>
-                                                </user-login-handler>
-                                            	</client-only>
+                                            	<user-login-handler>
+                                                	<a class="nav-link" data-toggle="modal">
+                                                    	<i class="fa fa-user mr-0 mr-sm-1" aria-hidden="true"></i>
+                                                    	<span class="d-none d-sm-inline">{{ trans("Ceres::Template.login") }}</span>
+                                                	</a>
+                                                	<a class="nav-link" data-toggle="modal">
+                                                    	<i class="fa fa-user-plus mr-0 mr-sm-1" aria-hidden="true"></i>
+                                                    	<span class="d-none d-sm-inline">{{ trans("Ceres::Template.loginRegister") }}</span>
+                                                	</a>
+                                            	</user-login-handler>
                                         	</li>
                                         	{#
 											<li class="list-inline-item dropdown control-languages">
@@ -69,8 +67,7 @@
                                                	href="#countrySettings"
                                                	aria-expanded="false"
                                                	aria-controls="countrySettings"
-                                               	data-parent="#controlsList"
-                                               aria-label="{{ trans('Ceres::Template.headerCountry') }}">
+                                               	data-parent="#controlsList">
                                                 <i class="flag-icon flag-icon-{{ lang }}"></i>
                                             	</a>
                                         	</li>
@@ -81,8 +78,7 @@
                                                    		href="#currencySelect"
                                                    		aria-expanded="false"
                                                    		aria-controls="currencySelect"
-                                                   		data-parent="#controlsList"
-                                                   		aria-label="{{ trans('Ceres::Template.headerCurrency') }}">
+                                                   		data-parent="#controlsList">
                                                     	<span>{{ services.checkout.getCurrencyData()[currencyFormat] }}</span>
                                                 	</a>
                                             	</li>
@@ -90,18 +86,16 @@
                                         	#}
 											{% if services.url.isRouteEnabled("wish-list") %}
                                             	<li class="list-inline-item control-wish-list">
-                                                	 <lazy-hydrate when-idle>
-                                                    <wish-list-count>
-                                                        <a class="nav-link" aria-label="{{ trans('Ceres::Template.wishList') }}">
-                                                            <span class="badge-right mr-1 d-none d-sm-inline">0</span>
-                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                        </a>
-                                                    </wish-list-count>
-                                                </lazy-hydrate>
+                                                	<wish-list-count>
+                                                    	<a class="nav-link">
+                                                        	<span class="badge-right mr-1 d-none d-sm-inline">0</span>
+                                                        	<i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    	</a>
+                                                	</wish-list-count>
                                             	</li>
                                         	{% endif %}
-											<li class="list-inline-item control-basket position-relative" @mouseover.once="$store.dispatch('loadComponent', 'basket-preview')">
-                                            	 <a v-toggle-basket-preview href="#" class="toggle-basket-preview nav-link" {{ set_testing_attr("data-testing", "basket-preview-button") }}>
+											<li class="list-inline-item control-basket position-relative">
+                                            	<a v-toggle-basket-preview href="#" class="toggle-basket-preview nav-link">
                                                 	{% if config("Ceres.header.basket_values") != "sum" %}
                                                     	<span class="mr-2" v-basket-item-quantity="$store.state.basket.data.itemQuantity">0</span>
                                                 	{% endif %}
@@ -113,50 +107,52 @@
                                                 	{% endif %}
                                             	</a>
 
-							<basket-preview v-if="$store.state.lazyComponent.components['basket-preview']" :show-net-prices="{{ showNetPrices | json_encode }}">
-                                                <template #before-basket-item>
-                                                    {{ LayoutContainer.show("Ceres::BasketList.BeforeItem") }}
-                                                </template>
-                                                <template #after-basket-item>
-                                                    {{ LayoutContainer.show("Ceres::BasketList.AfterItem") }}
-                                                </template>
-                                                <template #before-basket-totals>
-                                                    {{ LayoutContainer.show("Ceres::BasketPreview.BeforeBasketTotals") }}
-                                                </template>
-                                                <template #before-item-sum>
-                                                    {{ LayoutContainer.show("Ceres::BasketTotals.BeforeItemSum") }}
-                                                </template>
-                                                <template #after-item-sum>
-                                                    {{ LayoutContainer.show("Ceres::BasketTotals.AfterItemSum") }}
-                                                </template>
-                                                <template #before-shipping-costs>
-                                                    {{ LayoutContainer.show("Ceres::BasketTotals.BeforeShippingCosts") }}
-                                                </template>
-                                                <template #after-shipping-costs>
-                                                    {{ LayoutContainer.show("Ceres::BasketTotals.AfterShippingCosts") }}
-                                                </template>
-                                                <template #before-total-sum>
-                                                    {{ LayoutContainer.show("Ceres::BasketTotals.BeforeTotalSum") }}
-                                                </template>
-                                                <template #before-vat>
-                                                    {{ LayoutContainer.show("Ceres::BasketTotals.BeforeVat") }}
-                                                </template>
-                                                <template #after-vat>
-                                                    {{ LayoutContainer.show("Ceres::BasketTotals.AfterVat") }}
-                                                </template>
-                                                <template #after-total-sum>
-                                                    {{ LayoutContainer.show("Ceres::BasketTotals.AfterTotalSum") }}
-                                                </template>
-                                                <template #after-basket-totals>
-                                                    {{ LayoutContainer.show("Ceres::BasketPreview.AfterBasketTotals") }}
-                                                </template>
-                                                <template #before-checkout-button>
-                                                    {{ LayoutContainer.show("Ceres::BasketPreview.BeforeCheckoutButton") }}
-                                                </template>
-                                                <template #after-checkout-button>
-                                                    {{ LayoutContainer.show("Ceres::BasketPreview.AfterCheckoutButton") }}
-                                                </template>
-                                            </basket-preview>
+												<lazy-load component="basket-preview">
+                                                	<basket-preview :show-net-prices="{{ showNetPrices | json_encode }}">
+                                                    	<template #before-basket-item>
+                                                        	{{ LayoutContainer.show("Ceres::BasketList.BeforeItem") }}
+                                                    	</template>
+                                                    	<template #after-basket-item>
+                                                        	{{ LayoutContainer.show("Ceres::BasketList.AfterItem") }}
+                                                    	</template>
+                                                    	<template #before-basket-totals>
+                                                        	{{ LayoutContainer.show("Ceres::BasketPreview.BeforeBasketTotals") }}
+                                                    	</template>
+                                                    	<template #before-item-sum>
+                                                        	{{ LayoutContainer.show("Ceres::BasketTotals.BeforeItemSum") }}
+                                                    	</template>
+                                                    	<template #after-item-sum>
+                                                        	{{ LayoutContainer.show("Ceres::BasketTotals.AfterItemSum") }}
+                                                    	</template>
+                                                    	<template #before-shipping-costs>
+                                                        	{{ LayoutContainer.show("Ceres::BasketTotals.BeforeShippingCosts") }}
+                                                    	</template>
+                                                    	<template #after-shipping-costs>
+                                                        	{{ LayoutContainer.show("Ceres::BasketTotals.AfterShippingCosts") }}
+                                                    	</template>
+                                                    	<template #before-total-sum>
+                                                        	{{ LayoutContainer.show("Ceres::BasketTotals.BeforeTotalSum") }}
+                                                    	</template>
+                                                    	<template #before-vat>
+                                                        	{{ LayoutContainer.show("Ceres::BasketTotals.BeforeVat") }}
+                                                    	</template>
+                                                    	<template #after-vat>
+                                                        	{{ LayoutContainer.show("Ceres::BasketTotals.AfterVat") }}
+                                                    	</template>
+                                                    	<template #after-total-sum>
+                                                        	{{ LayoutContainer.show("Ceres::BasketTotals.AfterTotalSum") }}
+                                                    	</template>
+                                                    	<template #after-basket-totals>
+                                                        	{{ LayoutContainer.show("Ceres::BasketPreview.AfterBasketTotals") }}
+                                                    	</template>
+                                                    	<template #before-checkout-button>
+                                                        	{{ LayoutContainer.show("Ceres::BasketPreview.BeforeCheckoutButton") }}
+                                                    	</template>
+                                                    	<template #after-checkout-button>
+                                                        	{{ LayoutContainer.show("Ceres::BasketPreview.AfterCheckoutButton") }}
+                                                    	</template>
+                                                	</basket-preview>
+                                            	</lazy-load>
                                         	</li>
                                     	</ul>
                                 	</div>
@@ -196,12 +192,7 @@
                                 							<strong>{{ trans("Ceres::Template.headerSelectShippingCountry") }}</strong>
                                 							<hr>
 													</div>
-													<intersect>
-                                                    							<shipping-country-select :disable-input="{{ services.template.isCheckout() | json_encode() }}"></shipping-country-select>
-                                                							<template #loading>
-                                                        	<div class="row" style="height:1px;"></div>
-                                                    	</template>
-                                             	   </intersect>
+													<shipping-country-select :disable-input="{{ services.template.isCheckout() | json_encode() }}"></shipping-country-select>
 												</div>
 											</div>
 										</div>
@@ -217,7 +208,9 @@
 		</div>
 </header>
 
-<!-- breadcrumb -->
-{% if not services.template.isHome() and not services.template.isMyAccount() and not services.template.isCheckout() %}
-    {% include "CeresCoconut::PageDesign.Partials.Header.Breadcrumb" %}
-{% endif %}
+ {% cacheslot breadcrumbs %}
+                    {# breadcrumbs are related to every single page so they need to be wrapped in a cache slot #}
+                    {% if not services.template.isHome() and not services.template.isMyAccount() and not services.template.isCheckout() %}
+                        {% include "Ceres::PageDesign.Partials.Header.Breadcrumb" %}
+                    {% endif %}
+                {% endcacheslot %}
