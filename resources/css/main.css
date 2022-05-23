@@ -416,6 +416,12 @@ margin-top: 1rem;
   display: block;
   word-break: break-word;
 }
+.filter-collapse .card-columns .title {
+  padding-left: 0px;
+  border-left: 0px;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
 @media (max-width:1025px){
 .single .row .col-12 .sticky-element .title{
 	padding-left: 8px;
