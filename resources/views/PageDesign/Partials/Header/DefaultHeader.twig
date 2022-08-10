@@ -168,7 +168,7 @@
             						<div class="container-max">
                 						<div class="row p-3">
                     						<div class="col-12 col-lg-6">
-
+													{% cacheslot languageSelect %}
 													<div class="language-settings">
                             							<div class="list-title">
                                 							<strong>{{ trans("Ceres::Template.headerSelectLanguage") }}</strong>
@@ -178,15 +178,17 @@
                             							{% set languageUrls = services.url.getLanguageURLs() %}
                             							<ul>
                                 							{% for language in languageList %}
-                                    							<li{% if lang == language %} class="active"{% endif %}>
-                                        							<a href="{% if languageUrls[language] is defined %}{{ languageUrls[language] ~ queryString() }}{% elseif language != defaultLanguage %}/{{ language }}{{ urls.trailingSlashSuffix }}{% else %}/{% endif %}" data-update-url>
-                                            							<i class="flag-icon flag-icon-{{ language }}"></i>
-                                            							{{ trans("Ceres::Template.header" ~ language | capitalize) }}
-                                        							</a>
-                                    							</li>
+                                    			{% set languageISO = services.localizationRepository.getLanguageCode(language) %}
+                                                        <li class="col-6 col-sm-4 px-0{% if lang == language %} active{% endif %}">
+                                                            <a class="nav-link" href="{% if languageUrls[languageISO] is defined %}{{ languageUrls[languageISO] ~ queryString() }}{% elseif language != defaultLanguage %}/{{ language }}{{ urls.trailingSlashSuffix }}{% else %}/{% endif %}" data-update-url>
+                                                                <i class="flag-icon flag-icon-{{ language }}"></i>
+                                                                {{ trans("Ceres::Template.header" ~ language | capitalize) }}
+                                                            </a>
+                                                        </li>
                                 							{% endfor %}
                             							</ul>
 												</div>
+												{% endcacheslot %}
 												</div>
                     							<div class="col-12 col-lg-6">
                         							<div class="shipping-settings">
