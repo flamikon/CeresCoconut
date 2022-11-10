@@ -712,6 +712,16 @@ margin-bottom: 0px;
     font-size: 100%;
     display: inline;
 }
+@media (min-width: 340px) and (max-width: 364.9px){
+.availability_5 {
+	font-size: 78%;
+}
+}
+@media (min-width: 365px) and (max-width: 387px) {
+.availability_5 {
+	font-size: 90%;
+}
+}
 .widget-availability span.availability.badge.availability-5 {
 	background-color: #dc3545;
     color: #fff;
