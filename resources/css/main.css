@@ -209,9 +209,25 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     display: inline-block;
     color: #212529;
 }
-.top-bar .controls-list>li a:not(.btn):hover {
-    background-color: #392F6E;
+.top-bar .controls-list .dropdown a[aria-expanded=true] {
+    background-color: #392f6e;
     color: #fff;
+}
+.top-bar .controls-list .dropdown a[aria-expanded=true]:hover {
+    background-color: #26204a;
+    color: #fff;
+}
+.controls-list .nav-link[aria-expanded=true] {
+    background: #392f6e;
+	color: #fff !important;
+}
+.control-user .dropdown .dropdown-menu a {
+    color: #fff !important;
+    background-color: #392f6e;
+}
+.top-bar .controls-list>li a:not(.btn):hover {
+	color: #fff;
+    background-color: #26204a;
 }
 .top-bar .list-inline .list-inline-item #login-change a span {
     display: inline-block;
