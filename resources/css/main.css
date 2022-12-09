@@ -324,6 +324,9 @@ body #vue-app, #vue-error {
     margin-top: 0;
     padding-bottom: 30px;
 }
+.page-content.myaccount {
+	margin-top: 0 !important;
+}
 .categoriegrid .cmp-product-thumb {
 border-top: 1px solid #efefef;
 border-bottom: 1px solid #efefef;
