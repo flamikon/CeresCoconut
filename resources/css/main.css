@@ -225,6 +225,9 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     color: #fff !important;
     background-color: #392f6e;
 }
+.controls-list .control-user .dropdown-menu.small.m-0.p-0.mw-100.show {
+    will-change: auto !important;
+}
 .top-bar .controls-list>li a:not(.btn):hover {
 	color: #fff;
     background-color: #26204a;
