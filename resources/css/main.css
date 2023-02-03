@@ -301,6 +301,14 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 	font-weight: 500;
 	line-height: 1.1;
 }
+.startslide-2k23 .widget-inner {
+  padding: 1rem 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.startslide-2k23 .bg-appearance {
+	background-color: transparent !important;
+}
 body {
 	background-color: #fff;
 }
