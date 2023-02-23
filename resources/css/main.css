@@ -484,14 +484,19 @@ margin-top: 1rem;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
+@media (min-width: 768px){
+   .qualitywrapper{
+	text-align: center;
+   }
+   .qualitywrapper .pull-left{
+	   float: none !important;
+   }
+}
 @media (min-width: 768px) and (max-width: 1023.9px){
     .qualitywrapper{
       text-align: center;
 	padding: 10px;
 	min-height: 118px;
-    }
-    .qualitywrapper .pull-left{
-      float: none !important;
     }
 }
 
