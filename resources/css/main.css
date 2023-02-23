@@ -134,6 +134,9 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     padding: 1rem;
 	word-wrap: normal;
 }
+.normalmenu .collapse>li {
+	min-width: 170px;
+}
 .falldown {
     display: block;
     position: absolute;
@@ -481,9 +484,11 @@ margin-top: 1rem;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 1023.9px){
     .qualitywrapper{
       text-align: center;
+	padding: 10px;
+	min-height: 118px;
     }
     .qualitywrapper .pull-left{
       float: none !important;
