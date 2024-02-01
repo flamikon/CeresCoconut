@@ -444,9 +444,9 @@ margin-top: 1rem;
 /*Footer Formatierung ENDE*/
 /*Startseite Inhalt*/
 
-.startseite .widget-image-box.widget-image-box-fullwidth .widget-caption
+.startseite .widget-caption.widget-image-box-caption.fullwidth
 {
-  color: #3e4346;
+  color: #212529;
   background-color: rgba(255,255,255,.5);
 }
 
