@@ -15,7 +15,7 @@ html, body{
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
-.h-100{
+.h-100.widget-proportional.widget-prop-1-1{
 	height: 100% !important;
 }
 /*#page-header{
@@ -448,6 +448,10 @@ margin-top: 1rem;
 {
   color: #212529;
   background-color: rgba(255,255,255,.5);
+}
+.startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
+    color: #fff;
+    background-color: rgba(57,47,110,.3);
 }
 
 .title {
