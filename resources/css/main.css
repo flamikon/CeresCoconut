@@ -263,10 +263,16 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     background-color: #26204a;
 }
 .always-visible-search .container-max .position-relative {
+    -webkit-box-shadow: 0px 0px 0px 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
+    box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
+    position: relative;
+    max-width: 850px;
+}
+/*.always-visible-search .container-max .position-relative {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     position: relative;
-}
+}*/
 .navbar {
 	background-color: #fff;
 }
@@ -461,8 +467,8 @@ margin-top: 1rem;
 
 .startseite .widget-caption.widget-image-box-caption.fullwidth
 {
-  color: #212529;
-  background-color: rgba(255,255,255,.5);
+  color: #fff;
+  background-color: rgba(154,150,174,.5);
 }
 .startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
     color: #fff;
