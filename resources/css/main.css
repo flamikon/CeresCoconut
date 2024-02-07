@@ -149,6 +149,10 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 .normalmenu .collapse>li {
 	min-width: 170px;
 }
+.normalmenu a {
+	text-transform: uppercase;
+	font-weight: 600;
+}
 .falldown {
     display: block;
     position: absolute;
@@ -362,6 +366,7 @@ border-bottom: 1px solid #efefef;
 }
 .cmp-product-thumb .thumb-title {
     min-height: 45px;
+    font-weight: 700;
 }
 @media (max-width: 991.98px){
 .cmp-product-thumb .thumb-title {
