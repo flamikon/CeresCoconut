@@ -7,7 +7,16 @@
 body #vue-app{
 	/*margin-top: 13.5em !important;*/
 }
-
+/* ANFANG SEITENBREITE AUF 1560 PX MAX. ERWEITERN */
+.container-max {
+    z-index: auto;
+    max-width: 1560px;
+}
+.header-container>.widget:not(.widget-grid) {
+    min-width: inherit;
+    max-width: 1560px;
+}
+/* ENDE SEITENBREITE AUF 1560 PX MAX. ERWEITERN */
 html, body{
   /*font-family: 'RobotoCondensed', sans-serif;*/
   text-rendering: optimizeLegibility;
@@ -352,11 +361,11 @@ border-bottom: 1px solid #efefef;
     color: #fff;
 }
 .cmp-product-thumb .thumb-title {
-    min-height: 63px;
+    min-height: 45px;
 }
 @media (max-width: 991.98px){
 .cmp-product-thumb .thumb-title {
-    min-height: 84px;
+    min-height: 80px;
 }
 }
 #bannernummero4{
@@ -491,7 +500,7 @@ margin-top: 1rem;
 .qualitywrapper {
   padding: 15px;
   background: #fff;
-  border-bottom: 3px solid #392F6E;
+  /*border-bottom: 3px solid #392F6E;*/
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
