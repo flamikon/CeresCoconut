@@ -302,6 +302,7 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 .widget-primary .bg-appearance a {
     color: #fff;
     margin-left: .5rem;
+    font-size: 1.2rem;
 }
 /*.widget .widget-inner .widget-text .startseitenbox1 .col-lg6 {*/
 .widget-two-col .widget-inner .widget-text .startseitenbox1 .col-lg-6 {
@@ -344,7 +345,7 @@ body #vue-app, #vue-error {
 .page-content {
     padding-top: 1rem;
     background-color: #fff;
-    max-width: 1170px;
+    max-width: 1530px;
 }
 .page-content.basket, .page-content.checkout, .page-content.contact, .page-content.wishlist, .page-content.myaccount {
     color: #282d2f;
