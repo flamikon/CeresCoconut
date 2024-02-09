@@ -340,7 +340,7 @@ body #vue-app, #vue-error {
 }
 .page-content {
     	padding-top: 1rem;
-    	background-color: #fff;
+    	/*background-color: #fff;*/
     	max-width: 1530px;
 }
 .page-content.basket, .page-content.checkout, .page-content.contact, .page-content.wishlist, .page-content.myaccount {
@@ -354,7 +354,7 @@ body #vue-app, #vue-error {
 .categoriegrid .cmp-product-thumb {
 	/*border-top: 1px solid #efefef;*/
 	/*border-bottom: 1px solid #efefef;*/
-	border: 1px solid #efefef;
+	/*border: 1px solid #efefef;*/
 }
 .cmp-product-thumb .add-to-basket-lg-container {
 	border-color: transparent #575a59 transparent transparent;
@@ -752,8 +752,12 @@ body #vue-app, #vue-error {
 
 /* Startseite Inhalt ENDE */
 
-/* Kategorieansicht Artikelpreis sowie Informationen ausblenden */
+/* KATEGORIEANSICHT Artikelpreis sowie Informationen ausblenden, Kacheldesign, Filter */
 
+.categoriegrid .btn-link {
+	color: #212529;
+	font-weight: 600;
+}
 .thumb-content .thumb-meta .prices {
 	display: none;
 }
@@ -790,7 +794,7 @@ body #vue-app, #vue-error {
     	display: inherit;
 }
 
-/* Kategorieansicht Artikelpreis sowie Informationen ausblenden ENDE */
+/* KATEGORIEANSICHT Artikelpreis sowie Informationen ausblenden ENDE */
 
 /* Category-Contact */
 
