@@ -786,6 +786,6 @@ body #vue-app, #vue-error {
 #CfourContainerPopupModal .modal-content .modal-body button.close {
 	display: none;
 }
-div#CfourContainerPopupModal.modal-company {
+#CfourContainerPopupCompany {
 	display: none;
 }
