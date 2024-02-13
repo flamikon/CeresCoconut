@@ -341,6 +341,9 @@ body #vue-app, #vue-error {
 	margin:auto;
 }
 /*Footer Formatierung*/
+.mbot2rem {
+	margin-bottom: 2rem !important;
+}
 .footer .trust--columns {
 	display: -webkit-box;
 	display: -ms-flexbox;
