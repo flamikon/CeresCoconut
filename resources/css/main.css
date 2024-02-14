@@ -68,6 +68,7 @@ html, body{
 .mobile-navigation {
 	background: #fff;
 	color: #212529;
+	text-transform: uppercase;
 }
 .mobile-navigation .breadcrumb {
     	font-size: 1em;
@@ -790,16 +791,6 @@ body #vue-app, #vue-error {
 }
 
 /* KATEGORIEANSICHT Artikelpreis sowie Informationen ausblenden ENDE */
-
-/* Category-Contact */
-
-.category-contact .main .container-max {
-    	padding-top: 1rem;
-    	margin-top: 0;
-    	margin-bottom: 0;
-}
-
-/* Category-Contact ENDE */
 
 /* Artikelansicht */
 
