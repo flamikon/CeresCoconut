@@ -234,7 +234,7 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 	background-color: #fff;
 }
 .breadcrumbs{
-	background-color: #efefef;
+	background-color: rgb(247,247,249);
 }
 .list-controls .list-controls-inner {
     	background: #efefef;
@@ -301,7 +301,8 @@ body #vue-app, #vue-error {
     	padding-top: 35px;
 }
 #page-body{
-	background: url(https://cdn02.plentymarkets.com/7ukspn3affoc/frontend/Grafiken/hintergrund_amikon_grau.jpg) no-repeat center top fixed;
+	/*background: url(https://cdn02.plentymarkets.com/7ukspn3affoc/frontend/Grafiken/hintergrund_amikon_grau.jpg) no-repeat center top fixed;*/
+	background-color: rgb(247,247,249);
 	padding-bottom: 1em;
 }
 .page-content {
