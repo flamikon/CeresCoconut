@@ -232,8 +232,9 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     	margin-left: 0.5em;
 }
 .top-bar .controls-list .control-basket .toggle-basket-preview {
-    	background-color: #392F6E;
-    	color: #fff;
+    	background-color: #fff;
+    	color: #212529;
+    	font-weight: 600;
 }
 .top-bar .controls-list .control-basket .toggle-basket-preview:hover {
     	background-color: #26204a;
