@@ -239,6 +239,9 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 .top-bar .controls-list .control-basket .toggle-basket-preview:hover {
     	background-color: #26204a;
 }
+.search-submit {
+    	background-color: #eee;
+}
 .always-visible-search .container-max .position-relative {
     	-webkit-box-shadow: 0px 0px 0px 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
     	box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
@@ -750,6 +753,10 @@ body #vue-app, #vue-error {
 /* Startseite Inhalt ENDE */
 
 /* KATEGORIEANSICHT Artikelpreis sowie Informationen ausblenden, Kacheldesign, Filter */
+
+.sidebar-categories ul li.active>a, .widget-navigation-tree ul li.active>a {
+    	background: #eee;
+}
 
 .categoriegrid .btn-link {
 	color: #212529;
