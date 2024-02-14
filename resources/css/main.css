@@ -64,6 +64,15 @@ html, body{
     	display: none;
 }
 }
+/* Mobile Navigation einfärben */
+.mobile-navigation {
+	background: #fff;
+	color: #212529;
+}
+.mobile-navigation .breadcrumb {
+    	font-size: 1em;
+    	background: #eee;
+}
 
 nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     	background: #26204a;
@@ -116,7 +125,7 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     	display: block;
     	position: absolute;
     	width: 30%;
-    height: 50%;
+    	height: 50%;
     	top: 25%;
     	left: 35%;
     	opacity: 0;
@@ -191,6 +200,16 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 .top-bar .controls-list .dropdown a[aria-expanded=true]:hover {
     	background-color: #26204a;
     	color: #fff;
+}
+.controls-list .list-inline-item {
+    	margin-right: 0;
+    	font-size: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+.controls-list .list-inline-item {
+    	margin-right: 0;
+    	font-size: .8rem;
+}
 }
 .controls-list .nav-link[aria-expanded=true] {
     	background: #392f6e;
@@ -290,6 +309,12 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 }
 .startslide-2k23 .bg-appearance {
 	background-color: transparent !important;
+}
+@media screen and (min-width: 768px) and (max-width: 900px)
+{
+.widget-grid .widget-image-box-fullwidth .widget-inner .widget-caption h2 {
+    font-size: 1.5rem;
+}
 }
 body {
 	background-color: #fff;
