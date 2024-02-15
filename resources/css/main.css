@@ -281,7 +281,7 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 	height: 100%;
 	width: 100%;
 }
-.widget-primary .bg-appearance a {
+.startseite.widget-primary .bg-appearance a {
     	color: #212529 !important;
     	margin-left: .5rem;
     	font-size: 1.2rem;
@@ -306,7 +306,7 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     	border-left: 4px solid #392F6E;
     	padding-left: 8px;
 }
-.startseite .widget-primary .bg-appearance {
+.startseite.widget-primary .bg-appearance {
     	color: #212529 !important;
     	background-color: transparent !important;
 }
