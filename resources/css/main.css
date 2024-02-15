@@ -8,12 +8,7 @@
     	max-width: 1560px;
 }
 /* ENDE SEITENBREITE AUF 1560 PX MAX. ERWEITERN */
-html, body{
-  	text-rendering: optimizeLegibility;
-  	-moz-osx-font-smoothing: grayscale;
-  	font-smoothing: antialiased;
-  	-webkit-font-smoothing: antialiased;
-}
+
 .h-100.widget-proportional.widget-prop-1-1{
 	height: 100% !important;
 }
@@ -178,6 +173,7 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 .widget-image-carousel {
     	box-shadow: 0 0 0 rgba(0,0,0,0.0);
     	-o-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
     	-webkit-transition: all .2s ease-in-out;
     	transition: all .2s ease-in-out;
 }
@@ -190,7 +186,6 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     	border-top: 4px solid #392F6E;
 }
 .top-bar .controls-list>li a:not(.btn) {
-    	/*padding: 0.5rem .8rem;*/
     	display: inline-block;
     	color: #212529;
 }
@@ -287,7 +282,7 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 	width: 100%;
 }
 .widget-primary .bg-appearance a {
-    	color: #fff;
+    	color: #212529 !important;
     	margin-left: .5rem;
     	font-size: 1.2rem;
 }
@@ -306,6 +301,14 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 	margin: 0;
 	font-weight: 500;
 	line-height: 1.1;
+}
+.startseite .widget-item-list-inline-caption h1 {
+    	border-left: 4px solid #392F6E;
+    	padding-left: 8px;
+}
+.startseite .widget-primary .bg-appearance {
+    	color: #212529 !important;
+    	background-color: transparent !important;
 }
 .startslide-2k23 .widget-inner {
   	padding: 1rem 1.5rem;
@@ -331,13 +334,11 @@ body #vue-app, #vue-error {
     	padding-top: 35px;
 }
 #page-body{
-	/*background: url(https://cdn02.plentymarkets.com/7ukspn3affoc/frontend/Grafiken/hintergrund_amikon_grau.jpg) no-repeat center top fixed;*/
 	background-color: rgb(247,247,249);
 	padding-bottom: 1em;
 }
 .page-content {
     	padding-top: 1rem;
-    	/*background-color: #fff;*/
     	max-width: 1530px;
 }
 .page-content.basket, .page-content.checkout, .page-content.contact, .page-content.wishlist, .page-content.myaccount {
@@ -368,9 +369,7 @@ body #vue-app, #vue-error {
 	min-height: 80px;
 }
 }
-#bannernummero4{
-	margin:auto;
-}
+
 /*Footer Formatierung*/
 .mbot2rem {
 	margin-bottom: 2rem !important;
@@ -381,7 +380,6 @@ body #vue-app, #vue-error {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	/*border-bottom: 1px solid #dadae5;*/
 }
 .block-group {
 	zoom: 1;
@@ -503,7 +501,6 @@ body #vue-app, #vue-error {
 .qualitywrapper {
   	padding: 15px;
   	background: #fff;
-  	/*border-bottom: 3px solid #392F6E;*/
   	-moz-transition: all .4s ease-in-out;
   	-o-transition: all .4s ease-in-out;
   	-webkit-transition: all .4s ease-in-out;
@@ -527,7 +524,6 @@ body #vue-app, #vue-error {
 
 .qualitywrapper:hover {
   	background: #fafafa;
-  	/*border-bottom: 3px solid #575a59;*/
   	-webkit-box-shadow: 2px 5px 7px rgba(0,0,0,0.07);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   	-moz-box-shadow: 2px 5px 7px rgba(0,0,0,0.07);
   	box-shadow: 2px 5px 7px rgba(0,0,0,0.07);
@@ -590,6 +586,7 @@ body #vue-app, #vue-error {
   	top: 0;
   	position: relative;
   	-o-transition: all .2s ease;
+	-moz-transition: all .2s ease;
   	-webkit-transition: all .2s ease;
   	transition: all .2s ease;
 }
@@ -600,6 +597,7 @@ body #vue-app, #vue-error {
     	top: -10px;
     	position: relative;
     	-o-transition: all .2s ease;
+	-moz-transition: all .2s ease;
     	-webkit-transition: all .2s ease;
     	transition: all .2s ease;
 }
@@ -610,38 +608,8 @@ body #vue-app, #vue-error {
 
 .textwrapper {
     	display: block;
-    	/*background: white;*/
     	padding: 15px;
-    	/*color: #333;*/
 }
-
-/*.textwrapper {
-    	min-height: auto;
-}
-
-@media (min-width: 544px){
-        .textwrapper {
-        min-height: 180px;
-    }
-}
-
-@media (min-width: 650px){
-        .textwrapper {
-        min-height: 150px;
-    }
-}
-
-@media (min-width: 650px){
-        .textwrapper {
-        min-height: 130px;
-    }
-}
-
-@media (min-width: 860px){
-        .textwrapper {
-        min-height: 106px;
-    }
-}*/
 
 .contentboxwrapper .textwrapper p {
     	margin: 5px 0 0;
@@ -651,8 +619,8 @@ body #vue-app, #vue-error {
     	box-shadow: 2px 5px 7px rgba(0,0,0,0.07);
     	-webkit-box-shadow: 2px 5px 7px rgba(0,0,0,0.07);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 	-moz-box-shadow: 2px 5px 7px rgba(0,0,0,0.07);
-    	box-shadow: 2px 5px 7px rgba(0,0,0,0.07);
         -o-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
     	-webkit-transition: all .2s ease-in-out;
     	transition: all .2s ease-in-out;
 }
@@ -733,6 +701,7 @@ body #vue-app, #vue-error {
     	-webkit-filter: grayscale(100%);
     	filter: grayscale(100%);
     	-o-transition: all .3s ease;
+	-moz-transition: all .3s ease;
     	-webkit-transition: all .3s ease;
     	transition: all .3s ease;
 }
