@@ -729,6 +729,12 @@ body #vue-app, #vue-error {
 
 /* KATEGORIEANSICHT Artikelpreis sowie Informationen ausblenden, Kacheldesign, Filter */
 
+@media (min-width: 1550px){
+.categoriegrid.page-content.container-max {
+	padding-left: 0px;
+    	padding-right: 0px;
+}
+}
 .sidebar-categories ul li.active>a, .widget-navigation-tree ul li.active>a {
     	background: #eee;
 }
