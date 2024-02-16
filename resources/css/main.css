@@ -780,6 +780,13 @@ body #vue-app, #vue-error {
 .widget-item-price .base-price {
 	display: none;
 }
+.singlearticlebackground .widget-inner {
+    background: #fff;
+    padding-bottom: .3rem;
+}
+.single .nav-tabs .nav-link.active, .single .nav-tabs .nav-link:hover, .page-singleitem .nav-tabs .nav-link.active, .page-singleitem .nav-tabs .nav-link:hover {
+    background: #eee;
+}
 
 /* Artikelansicht ENDE */
 
