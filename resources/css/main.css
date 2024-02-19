@@ -83,26 +83,21 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 }
 
 .main-navbar-collapsable ul.mainmenu li  ul#navDropdown0 {
-	left: -500px;
-	right: auto;
-	margin: auto;
 	display: grid;
 	grid-template-columns: repeat(5, auto);
-	width: auto;
-	max-width: none;
-	min-width: 0;
 	list-style: none;
-	padding: 0;
 	z-index: 98; /* Ursprünglich z-index 20 */
 	-webkit-hyphens: auto;
  	-moz-hyphens: auto;
  	-ms-hyphens: auto;
  	hyphens: auto;
-}
-@media (max-width: 1100px){
-.main-navbar-collapsable ul.mainmenu li  ul#navDropdown0 {
-    	left: -410px;
-}
+	left: 50% !important;
+    	right: auto !important;
+    	transform: translate(-30%, 0) !important;
+	webkit-transform: translate(-30%, 0) !important;
+	moz-transform: translate(-30%, 0) !important;
+	o-transform: translate(-30%, 0) !important;
+	ms-transform: translate(-30%, 0) !important;
 }
 .main-navbar-collapsable ul.mainmenu li ul#navDropdown0 a {
     	display: inline-block;
