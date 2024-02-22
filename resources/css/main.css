@@ -29,7 +29,7 @@
 #page-header .widget-fw .amikon_headerAdvantage .amikon_advantage span a {
     	color: #fff;
 }
-@media (max-width: 1199px){
+@media (max-width: 575.98px){
 .amikon_headerAdvantage {
     	display: none;
 }
@@ -178,7 +178,11 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 .top-bar {
     	color: #fff;
     	background-color: #fff;
-    	border-top: 4px solid #392F6E;
+}
+@media (max-width: 575.98px;){
+.top-bar {
+	border-top: 4px solid #392F6E;
+}
 }
 .top-bar .controls-list>li a:not(.btn) {
     	display: inline-block;
@@ -251,7 +255,7 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
 	background-color: rgb(247,247,249);
 }
 .list-controls .list-controls-inner {
-    	background: #efefef;
+    	background: rgb(247,247,249);
 }
 .pipe {
     	border-left: 1px solid #b2b1a7;
