@@ -789,6 +789,10 @@ body #vue-app, #vue-error {
     background: #fff;
     padding-bottom: .3rem;
 }
+.singlearticlebackground .widget-contact-form {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
 .single .nav-tabs .nav-link.active, .single .nav-tabs .nav-link:hover, .page-singleitem .nav-tabs .nav-link.active, .page-singleitem .nav-tabs .nav-link:hover {
     background: #eee;
 }
