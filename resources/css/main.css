@@ -468,7 +468,11 @@ body #vue-app, #vue-error {
 	color: #fff;
 	background-color: rgba(57,47,110,.3);
 }
-
+.startseite .carousel .carousel-item img {
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
 .title {
 	padding-left: 8px;
 	border-left: 4px solid #392F6E;
