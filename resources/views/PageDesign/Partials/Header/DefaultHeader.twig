@@ -1,7 +1,9 @@
 {#Insert markup here#}
 {% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
+{% set lowClsHeader = config("Ceres.header.low_cls_mode") %}
+{% set visibleFields = ceresConfig.basket.previewData %}
 
-<header id="page-header" class="top-bar default-header d-print-none">
+<header id="page-header" class="top-bar default-header d-print-none {% if lowClsHeader == "true" %}sticky-top{% endif %}">
         <div class="container-max">
             <div class="row flex-row-reverse position-relative">
 				<div id="page-header-parent" class="col-12 header-container" data-header-offset>
@@ -46,8 +48,8 @@
                                 			</div>
                             			</item-search>
                         			</div>
-									<div class="controls">
-										<ul id="controlsList" class="controls-list mb-0 d-flex list-inline pl-2 pl-sm-1 pl-md-0">
+						<div class="controls">
+						<ul id="controlsList" class="controls-list mb-0 d-flex list-inline pl-2 pl-sm-1 pl-md-0">
                                         	<li class="list-inline-item control-user">
                                             	<client-only>
                                                 <user-login-handler>
@@ -62,7 +64,7 @@
                                                 </user-login-handler>
                                             	</client-only>
                                         	</li>
-											<li class="list-inline-item dropdown control-languages">
+						<li class="list-inline-item dropdown control-languages">
                                             	<a class="nav-link"
                                                	data-toggle="collapse"
                                                	href="#countrySettings"
@@ -73,7 +75,7 @@
                                                 <i class="flag-icon flag-icon-{{ lang }}"></i>
                                             	</a>
                                         	</li>
-											{% if enableCurrencySelect == "true" %}
+						{% if enableCurrencySelect == "true" %}
                                             	<li class="list-inline-item dropdown control-languages">
                                                 	<a class="nav-link"
                                                    		data-toggle="collapse"
@@ -111,7 +113,7 @@
                                                 	{% endif %}
                                             	</a>
 
-						<basket-preview v-if="$store.state.lazyComponent.components['basket-preview']" :show-net-prices="{{ showNetPrices | json_encode }}">
+						<basket-preview v-if="$store.state.lazyComponent.components['basket-preview']" :show-net-prices="{{ showNetPrices | json_encode }}" :visible-fields="{{ visibleFields | json_encode }}>
                                                 <template #before-basket-item>
                                                     {{ LayoutContainer.show("Ceres::BasketList.BeforeItem") }}
                                                 </template>
@@ -212,14 +214,14 @@
 						</div>
 					</div>
 				{% include "CeresCoconut::PageDesign.Partials.Header.Navigation" %}
+
+				{% cacheslot breadcrumbs %}
+                    			{# breadcrumbs are related to every single page so they need to be wrapped in a cache slot #}
+                    			{% if not services.template.isHome() and not services.template.isMyAccount() and not services.template.isCheckout() %}
+                        			{% include "CeresCoconut::PageDesign.Partials.Header.Breadcrumb" %}
+                    			{% endif %}
+				{% endcacheslot %}
 				</div>
 			</div>
 		</div>
 </header>
-
-{% cacheslot breadcrumbs %}
-                    {# breadcrumbs are related to every single page so they need to be wrapped in a cache slot #}
-                    {% if not services.template.isHome() and not services.template.isMyAccount() and not services.template.isCheckout() %}
-                        {% include "CeresCoconut::PageDesign.Partials.Header.Breadcrumb" %}
-                    {% endif %}
-{% endcacheslot %}
