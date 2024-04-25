@@ -468,6 +468,13 @@ body #vue-app, #vue-error {
 	color: #fff;
 	background-color: rgba(57,47,110,.3);
 }
+.willkommensbanner .widget-caption.widget-image-box-caption.fullwidth {
+    	background-color: rgba(57, 47, 110, .0);
+}
+.willkommensbanner .widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
+    	color: #fff;
+    	background-color: rgba(57, 47, 110, .0);
+}
 .startseite .carousel .carousel-item img {
 	min-width: 100%;
 	min-height: 100%;
