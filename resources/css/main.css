@@ -767,6 +767,28 @@ body #vue-app, #vue-error {
 .availability_1 {
     	background-color: #28a745;
     	color: #fff;
+	font-size: 100%;
+	font-weight: 400;
+}
+@media (min-width: 340px) and (max-width: 355px){
+.availability_1 {
+	font-size: 2.7vw;
+}
+}
+@media (min-width: 356px) and (max-width: 379px){
+.availability_1 {
+	font-size: 2.8vw;
+}
+}
+@media (min-width: 380px) and (max-width: 443px){
+.availability_1 {
+	font-size: 3vw;
+}
+}
+@media (min-width: 444px) and (max-width: 575px){
+.availability_1 {
+	font-size: 1.1rem;
+}
 }
 .availability_5 {
     	background-color: #dc3545;
@@ -774,14 +796,24 @@ body #vue-app, #vue-error {
     	font-size: 100%;
     	display: inline;
 }
-@media (min-width: 340px) and (max-width: 364.9px){
+@media (min-width: 340px) and (max-width: 355px){
 .availability_5 {
-	font-size: 78%;
+	font-size: 2.7vw;
 }
 }
-@media (min-width: 365px) and (max-width: 387px) {
+@media (min-width: 356px) and (max-width: 379px){
 .availability_5 {
-	font-size: 90%;
+	font-size: 2.8vw;
+}
+}
+@media (min-width: 380px) and (max-width: 443px){
+.availability_5 {
+	font-size: 3vw;
+}
+}
+@media (min-width: 444px) and (max-width: 575px){
+.availability_5 {
+	font-size: 1.1rem;
 }
 }
 .widget-availability span.availability.badge.availability-5 {
