@@ -367,7 +367,8 @@ body #vue-app, #vue-error {
 }
 .cmp-product-thumb .thumb-title {
 	min-height: 45px;
-	font-weight: 700;
+	color: #212529;
+	font-size: 1.2rem;
 }
 @media (max-width: 991.98px){
 .cmp-product-thumb .thumb-title {
