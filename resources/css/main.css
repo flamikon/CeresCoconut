@@ -242,12 +242,6 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
     	position: relative;
     	max-width: 850px;
 }
-/* Altes Suchleistendesign */
-/*.always-visible-search .container-max .position-relative {
-    	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    	position: relative;
-}*/
 .navbar {
 	background-color: #fff;
 }
@@ -767,52 +761,61 @@ body #vue-app, #vue-error {
 .availability_1 {
     	background-color: #28a745;
     	color: #fff;
+}
+.thumb-content .availability_1 {
+    	background-color: #28a745;
+    	color: #fff;
 	font-size: 100%;
 	font-weight: 400;
 }
-@media (min-width: 340px) and (max-width: 355px){
-.availability_1 {
+@media (min-width: 340px) and (max-width: 355.98px){
+.thumb-content .availability_1 {
 	font-size: 2.7vw;
 }
 }
-@media (min-width: 356px) and (max-width: 379px){
-.availability_1 {
+@media (min-width: 356px) and (max-width: 379.98px){
+.thumb-content .availability_1 {
 	font-size: 2.8vw;
 }
 }
-@media (min-width: 380px) and (max-width: 443px){
-.availability_1 {
+@media (min-width: 380px) and (max-width: 443.98px){
+.thumb-content .availability_1 {
 	font-size: 3vw;
 }
 }
-@media (min-width: 444px) and (max-width: 575px){
-.availability_1 {
+@media (min-width: 444px) and (max-width: 575.98px){
+.thumb-content .availability_1 {
 	font-size: 1.1rem;
 }
 }
 .availability_5 {
     	background-color: #dc3545;
     	color: #fff;
-    	font-size: 100%;
     	display: inline;
 }
-@media (min-width: 340px) and (max-width: 355px){
-.availability_5 {
+.thumb-content .availability_5 {
+    	background-color: #dc3545;
+    	color: #fff;
+	font-size: 100%;
+    	display: inline;
+}
+@media (min-width: 340px) and (max-width: 355.98px){
+.thumb-content .availability_5 {
 	font-size: 2.7vw;
 }
 }
-@media (min-width: 356px) and (max-width: 379px){
-.availability_5 {
+@media (min-width: 356px) and (max-width: 379.98px){
+.thumb-content .availability_5 {
 	font-size: 2.8vw;
 }
 }
-@media (min-width: 380px) and (max-width: 443px){
-.availability_5 {
+@media (min-width: 380px) and (max-width: 443.98px){
+.thumb-content .availability_5 {
 	font-size: 3vw;
 }
 }
-@media (min-width: 444px) and (max-width: 575px){
-.availability_5 {
+@media (min-width: 444px) and (max-width: 575.98px){
+.thumb-content .availability_5 {
 	font-size: 1.1rem;
 }
 }
