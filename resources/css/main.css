@@ -362,11 +362,11 @@ body #vue-app, #vue-error {
 .cmp-product-thumb .thumb-title {
 	min-height: 45px;
 	color: #212529;
-	font-size: 1.2rem;
+	/*font-size: 1.2rem;*/
 }
 @media (max-width: 991.98px){
 .cmp-product-thumb .thumb-title {
-	min-height: 80px;
+	min-height: 70px;
 }
 }
 
@@ -758,6 +758,9 @@ body #vue-app, #vue-error {
 .thumb-content .vat {
 	display: none;
 }
+.badge {
+	white-space: inherit;
+}
 .availability_1 {
     	background-color: #28a745;
     	color: #fff;
@@ -765,59 +768,18 @@ body #vue-app, #vue-error {
 .thumb-content .availability_1 {
     	background-color: #28a745;
     	color: #fff;
-	font-size: 100%;
 	font-weight: 400;
-}
-@media (min-width: 340px) and (max-width: 355.98px){
-.thumb-content .availability_1 {
-	font-size: 2.7vw;
-}
-}
-@media (min-width: 356px) and (max-width: 379.98px){
-.thumb-content .availability_1 {
-	font-size: 2.8vw;
-}
-}
-@media (min-width: 380px) and (max-width: 443.98px){
-.thumb-content .availability_1 {
-	font-size: 3vw;
-}
-}
-@media (min-width: 444px) and (max-width: 575.98px){
-.thumb-content .availability_1 {
-	font-size: 1.1rem;
-}
+	width: 100%;
 }
 .availability_5 {
     	background-color: #dc3545;
     	color: #fff;
-    	display: inline;
 }
 .thumb-content .availability_5 {
     	background-color: #dc3545;
     	color: #fff;
-	font-size: 100%;
-    	display: inline;
-}
-@media (min-width: 340px) and (max-width: 355.98px){
-.thumb-content .availability_5 {
-	font-size: 2.7vw;
-}
-}
-@media (min-width: 356px) and (max-width: 379.98px){
-.thumb-content .availability_5 {
-	font-size: 2.8vw;
-}
-}
-@media (min-width: 380px) and (max-width: 443.98px){
-.thumb-content .availability_5 {
-	font-size: 3vw;
-}
-}
-@media (min-width: 444px) and (max-width: 575.98px){
-.thumb-content .availability_5 {
-	font-size: 1.1rem;
-}
+	font-size: 85%;
+	width: 100%;
 }
 .widget-availability span.availability.badge.availability-5 {
 	background-color: #dc3545;
