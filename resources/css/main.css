@@ -735,9 +735,6 @@ body #vue-app, #vue-error {
 
 /* KATEGORIEANSICHT Artikelpreis sowie Informationen ausblenden, Kacheldesign, Filter */
 
-.owl-carousel.owl-loaded {
-	display: flex;
-}
 .owl-carousel .owl-stage {
 	display: flex;
 }
