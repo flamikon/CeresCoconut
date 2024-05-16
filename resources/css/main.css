@@ -91,13 +91,13 @@ nav.navbar:not(.megamenu) .nav-dropdown-inner li:hover {
  	-moz-hyphens: auto;
  	-ms-hyphens: auto;
  	hyphens: auto;
-	left: 50% !important;
-    	right: auto !important;
-    	transform: translate(-30%, 0) !important;
-	webkit-transform: translate(-30%, 0) !important;
-	moz-transform: translate(-30%, 0) !important;
-	o-transform: translate(-30%, 0) !important;
-	ms-transform: translate(-30%, 0) !important;
+	/*left: 50% !important;*/
+    	/*right: auto !important;*/
+    	transform: translate(-41%, 0) !important;
+	webkit-transform: translate(-41%, 0) !important;
+	moz-transform: translate(-41%, 0) !important;
+	o-transform: translate(-41%, 0) !important;
+	ms-transform: translate(-41%, 0) !important;
 }
 .main-navbar-collapsable ul.mainmenu li ul#navDropdown0 a {
     	display: inline-block;
