@@ -457,9 +457,17 @@ body #vue-app, #vue-error {
 }
 .startseite.cat-top img.img-cover {
     filter: saturate(0.3);
+	-webkit-filter: saturate(0.3);
+	-moz-filter: saturate(0.3);
+	-o-filter: saturate(0.3);
+	-ms-filter: saturate(0.3);
 }
 .startseite.cat-top img.img-cover:hover {
-    filter: saturate(1);
+    filter: none;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-o-filter: none;
+	-ms-filter: none;
 }
 .startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
 	color: #fff;
