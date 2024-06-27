@@ -255,6 +255,9 @@ column-count: 3;
 	background-color: transparent;
 }
 
+.cat-top.widget-image-box>.widget-inner {
+    padding: 0;
+}
 .widget-image-carousel.widget-proportional {
     	margin-top: 2em;
 }
