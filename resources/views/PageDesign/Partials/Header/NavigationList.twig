@@ -4,94 +4,94 @@
 <ul class="mainmenu p-0 m-0 d-flex">
     <li><a href="https://amikon-shop.de">{{ trans("CeresCoconut::Template.headerhome") }}</a></li>
     <li class="ddown"><a href="#">{{ trans("CeresCoconut::Template.headercategory") }}</a>
-	<ul data-level="1" id="navDropdown0" class="collapse">
+	<ul data-level="1" class="collapse nav-dropdown-0">
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(199) }}">{{ trans("CeresCoconut::Template.categorylasersinter") }}</a></li>
 	</ul>
 	</li> 
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(36) }}">{{ trans("CeresCoconut::Template.categorymaschinen") }}</a></li>
 	</ul>
 	</li> 
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(244) }}">{{ trans("CeresCoconut::Template.categoryrem") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(53) }}">{{ trans("CeresCoconut::Template.categoryroboter") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(245) }}">{{ trans("CeresCoconut::Template.categoryshaker") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(48) }}">{{ trans("CeresCoconut::Template.categorywaermeklimaschrank") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(54) }}">{{ trans("CeresCoconut::Template.categoryelektronikgesamt") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(39) }}">{{ trans("CeresCoconut::Template.categoryfrequenzumrichter") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(34) }}">{{ trans("CeresCoconut::Template.categorylaborartikel") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(42) }}">{{ trans("CeresCoconut::Template.categorylasertechnik") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(38) }}">{{ trans("CeresCoconut::Template.categorymessundprueftechnik") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(35) }}">{{ trans("CeresCoconut::Template.categorymonitorbedieneinheit") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(49) }}">{{ trans("CeresCoconut::Template.categorymotorenundantriebe") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(43) }}">{{ trans("CeresCoconut::Template.categorypneumatik") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(46) }}">{{ trans("CeresCoconut::Template.categorypumpen") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(47) }}">{{ trans("CeresCoconut::Template.categorysonstigeartikel") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(37) }}">{{ trans("CeresCoconut::Template.categorythermischeszubehoer") }}</a></li>
 	</ul>
 	</li>
 	<li>
-	<ul class="nav-dropdown-inner">
+	<ul class="collapse-inner">
 	<li class="level1"><a href="{{ services.category.getURLById(123) }}">{{ trans("CeresCoconut::Template.categoryvakuumtechnik") }}</a></li>
 	</ul>
 	</li>
@@ -102,16 +102,3 @@
     <li><a href="/contact">{{ trans("CeresCoconut::Template.headercontact") }}</a></li>
     <li><a href="{{ services.category.getURLById(238) }}">{{ trans("CeresCoconut::Template.headerpurchaseform") }}</a></li>
 </ul>
-
-{#<ul class="mainmenu">
-    {{ Tree.get_nav_bar(
-        categories,
-        "",
-        ceresConfig.header.megamenuLevels,
-        {
-            "1": ceresConfig.header.megamenuItemsStage1,
-            "2": ceresConfig.header.megamenuItemsStage2,
-            "3": ceresConfig.header.megamenuItemsStage3
-        }
-    ) }}
-</ul>#}
