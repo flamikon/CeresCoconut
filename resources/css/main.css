@@ -446,10 +446,20 @@ body #vue-app, #vue-error {
 /*Footer Formatierung ENDE*/
 /*Startseite Inhalt*/
 
+.startseite.cat-top .widget-caption.widget-image-box-caption.fullwidth {
+    color: #fff;
+    background-color: rgba(154, 150, 174, .2);
+}
 .startseite .widget-caption.widget-image-box-caption.fullwidth
 {
 	color: #fff;
 	background-color: rgba(154,150,174,.5);
+}
+.startseite.cat-top img.img-cover {
+    filter: saturate(0.3);
+}
+.startseite.cat-top img.img-cover:hover {
+    filter: saturate(1);
 }
 .startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
 	color: #fff;
