@@ -81,6 +81,11 @@
 .main-navbar-collapsable .collapse-inner li:hover {
     background: #392f6e;
 }
+.megamenu .collapse {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+}
 .megamenu .level1 a {
     font-weight: 600;
     color: #212529 !important;
@@ -88,7 +93,7 @@
 .megamenu .level1:hover a {
     color: #fff !important;
 }
-.normalmenu .megamenu a {
+.main-navbar-collapsable ul.mainmenu a {
 	text-transform: uppercase;
 	font-weight: 600;
 }
