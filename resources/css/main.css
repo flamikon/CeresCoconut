@@ -463,11 +463,11 @@ body #vue-app, #vue-error {
 	-ms-filter: saturate(0.3);
 }
 .startseite.cat-top img.img-cover:hover {
-    filter: none;
-	-webkit-filter: none;
-	-moz-filter: none;
-	-o-filter: none;
-	-ms-filter: none;
+    filter: none !important;
+	-webkit-filter: none !important;
+	-moz-filter: none !important;
+	-o-filter: none !important;
+	-ms-filter: none !important;
 }
 .startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
 	color: #fff;
