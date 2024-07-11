@@ -455,6 +455,10 @@ body #vue-app, #vue-error {
     color: #212529;
     background-color: #fff;
 }
+.startseite.cat-top.widget-image-box>.widget-inner .widget-caption h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 .startseite.cat-top img.img-cover {
     filter: saturate(0.5);
 	-webkit-filter: saturate(0.5);
