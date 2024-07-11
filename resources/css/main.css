@@ -448,26 +448,12 @@ body #vue-app, #vue-error {
 
 .startseite.cat-top .widget-caption.widget-image-box-caption.fullwidth {
     color: #fff;
-    background-color: rgba(154, 150, 174, .2);
+    background-color: rgba(244, 244, 246, .0);
 }
 .startseite .widget-caption.widget-image-box-caption.fullwidth
 {
 	color: #fff;
 	background-color: rgba(154,150,174,.5);
-}
-.startseite.cat-top img.img-cover {
-    filter: saturate(0.3);
-	-webkit-filter: saturate(0.3);
-	-moz-filter: saturate(0.3);
-	-o-filter: saturate(0.3);
-	-ms-filter: saturate(0.3);
-}
-.startseite.cat-top img.img-cover:hover {
-    filter: none !important;
-	-webkit-filter: none !important;
-	-moz-filter: none !important;
-	-o-filter: none !important;
-	-ms-filter: none !important;
 }
 .startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
 	color: #fff;
