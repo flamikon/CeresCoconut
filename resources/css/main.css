@@ -462,10 +462,10 @@ body #vue-app, #vue-error {
 	-o-filter: saturate(0.5);
 	-ms-filter: saturate(0.5);
 }
-/*.startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
-	color: #fff;
-	background-color: rgba(57,47,110,.3);
-}*/
+.startseite.cat-top.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
+	color: #212529;
+	background-color: #fff;
+}
 .willkommensbanner .widget-inner .widget-image-box-caption.fullwidth {
     	color: #fff;
 	background-color: rgba(57, 47, 110, .0);
