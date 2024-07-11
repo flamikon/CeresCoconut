@@ -254,10 +254,6 @@ column-count: 3;
 #page-header-parent .breadcrumbs ul.breadcrumb{
 	background-color: transparent;
 }
-
-.cat-top.widget-image-box>.widget-inner {
-    padding: 0;
-}
 .widget-image-carousel.widget-proportional {
     	margin-top: 2em;
 }
@@ -452,13 +448,24 @@ body #vue-app, #vue-error {
 }
 .startseite .widget-caption.widget-image-box-caption.fullwidth
 {
-	color: #fff;
-	background-color: rgba(154,150,174,.5);
+    color: #fff;
+    background-color: rgba(154,150,174,.5);
 }
-.startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
+.startseite.cat-top.widget-image-box.widget-primary .widget-caption {
+    color: #212529;
+    background-color: #fff;
+}
+.startseite.cat-top img.img-cover {
+    filter: saturate(0.5);
+	-webkit-filter: saturate(0.5);
+	-moz-filter: saturate(0.5);
+	-o-filter: saturate(0.5);
+	-ms-filter: saturate(0.5);
+}
+/*.startseite.widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
 	color: #fff;
 	background-color: rgba(57,47,110,.3);
-}
+}*/
 .willkommensbanner .widget-inner .widget-image-box-caption.fullwidth {
     	color: #fff;
 	background-color: rgba(57, 47, 110, .0);
