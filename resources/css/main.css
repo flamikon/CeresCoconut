@@ -805,6 +805,6 @@ margin-bottom: 0px;
 #CfourContainerPopupModal .modal-content .modal-body button.close {
 	display: none;
 }
-#CfourContainerPopupCompany {
+#CfourContainerPopupModal .modal-content .modal-footer #CfourContainerPopupCompany {
 	display: none;
 }
