@@ -1,3 +1,6 @@
+body {
+	font-size: 1.1rem;
+}
 /* ANFANG SEITENBREITE AUF 1560 PX MAX. ERWEITERN */ /*TEST*/
 .container-max {
 	z-index: auto;
@@ -14,9 +17,9 @@
 }
 #page-header .widget-inner .amikon_headerAdvantage {
     	padding: 11px 10px;
-    	font-weight: 700;
+    	font-weight: 300;
     	text-align: center;
-    	font-size: 12px;
+    	font-size: 0.95rem;
 }
 #page-header .widget-inner .amikon_headerAdvantage .amikon_advantage {
     	display: inline-block;
@@ -95,7 +98,8 @@ column-count: 3;
 }
 .main-navbar-collapsable ul.mainmenu a {
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 1.2rem;
 }
 .falldown {
     	display: block;
@@ -350,7 +354,7 @@ body #vue-app, #vue-error {
 .cmp-product-thumb .thumb-title {
 	min-height: 45px;
 	color: #212529;
-	/*font-size: 1.2rem;*/
+	font-size: 1.1rem;
 }
 @media (max-width: 991.98px){
 .cmp-product-thumb .thumb-title {
@@ -792,7 +796,7 @@ body #vue-app, #vue-error {
 .thumb-content .availability_5 {
     	background-color: #dc3545;
     	color: #fff;
-	font-size: 85%;
+	font-size: 0.85rem;
 	width: 100%;
 }
 .widget-availability span.availability.badge.availability-5 {
