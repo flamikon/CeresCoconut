@@ -404,14 +404,14 @@ body #vue-app, #vue-error {
 }
 }
 .footer .trust--columns i {
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	color: #392F6E;
 }
 .footer .trust--columns span {
 	font-weight: 600;
 }
 .footer .trust--columns p {
-	font-size: 0.8rem;
+	font-size: 80%;
 }
 .footer .text--center {
 	text-align: center !important;
