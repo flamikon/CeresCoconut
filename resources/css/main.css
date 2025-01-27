@@ -103,6 +103,9 @@ column-count: 3;
 	font-weight: 700;
 	font-size: 1.2rem;
 }
+.sidebar-categories ul li a[href], .widget-navigation-tree ul li a[href] {
+    font-size: 1.1rem;
+}
 .falldown {
     	display: block;
     	position: absolute;
