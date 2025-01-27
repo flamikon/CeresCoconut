@@ -845,6 +845,17 @@ body #vue-app, #vue-error {
 
 /* Artikelansicht ENDE */
 
+.verszahlbild {
+    float: left;
+    margin-right: 10px;
+}
+@media screen and (max-width: 520px){
+.verszahlbild{
+	float: none;
+	margin-right: 0px;
+	width: auto;
+}
+}
 #CfourContainerPopupModal .modal-content .modal-body button.close {
 	display: none;
 }
