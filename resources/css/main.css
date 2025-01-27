@@ -80,7 +80,9 @@ body {
     	color: #212529;
 }
 }
-
+.main-navbar-collapsable {
+    font-size: 1.1rem;
+}
 .main-navbar-collapsable .collapse-inner li:hover {
     background: #392f6e;
 }
