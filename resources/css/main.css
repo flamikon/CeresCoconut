@@ -1,16 +1,16 @@
 body {
 	font-size: 1.1rem;
 }
-/* ANFANG SEITENBREITE AUF 1560 PX MAX. ERWEITERN */ /*TEST*/
+/* ANFANG SEITENBREITE AUF 1600 PX MAX. ERWEITERN */ /*TEST*/
 .container-max {
 	z-index: auto;
-    	max-width: 1560px;
+    	max-width: 1600px;
 }
 .header-container>.widget:not(.widget-grid) {
     	min-width: inherit;
-    	max-width: 1560px;
+    	max-width: 1600px;
 }
-/* ENDE SEITENBREITE AUF 1560 PX MAX. ERWEITERN */
+/* ENDE SEITENBREITE AUF 1600 PX MAX. ERWEITERN */
 
 .h-100.widget-proportional.widget-prop-1-1{
 	height: 100% !important;
