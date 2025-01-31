@@ -460,6 +460,11 @@ body #vue-app, #vue-error {
     color: #fff;
     background-color: rgba(154,150,174,.5);
 }
+.startseite .widget-caption.widget-image-box-caption.fullwidth:hover {
+    color: #fff;
+    background-color: rgba(57,47,110,.5);
+}
+rgb(29.2261146497,24.0987261146,56.4012738854)
 .startseite.cat-top.widget-image-box.widget-primary .widget-caption {
     color: #212529;
     background-color: #fff;
