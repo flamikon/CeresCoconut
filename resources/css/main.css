@@ -520,9 +520,7 @@ body #vue-app, #vue-error {
 .contentboxwrapper .logowrapper {
     	display: block;
     	width: 100%;
-    	height: 0;
-    	padding-bottom: 52.2%;
-    	overflow: hidden;
+    	overflow: visible;
 }
 .contentboxwrapper .logowrapper img {
     	max-width: 100%;
@@ -617,7 +615,13 @@ body #vue-app, #vue-error {
     font-size: clamp(1.1rem, 1.75vw, 1.75rem);
 }
 }
-@media screen and (max-width: 11150px){
+@media screen and (max-width: 767.5px){
+.widget-image-box .widget-inner .widget-caption h2, .widget-image-box .widget-inner .widget-caption .h2 {
+    margin: 0;
+    font-size: clamp(1.1rem, 8vw, 3rem);
+}
+}
+@media screen and (max-width: 1150px){
 .widget-image-box .widget-inner .widget-caption {
     word-break: normal;
 }
