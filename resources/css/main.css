@@ -602,6 +602,10 @@ body #vue-app, #vue-error {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.singlearticlebackground .tab-content hr {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
 .singlearticlebackground h5, .h5 {
     font-size: 1.1rem;
 }
