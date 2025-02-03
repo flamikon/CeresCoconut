@@ -283,7 +283,7 @@ body #vue-app, #vue-error {
 }
 .page-content {
     	padding-top: 1rem;
-    	max-width: 1530px;
+    	max-width: 1600px;
 }
 .page-content.basket, .page-content.checkout, .page-content.contact, .page-content.wishlist, .page-content.myaccount {
     	color: #282d2f;
@@ -502,12 +502,12 @@ body #vue-app, #vue-error {
 	display: flex;
 	flex: 1 0 auto;
 }
-@media (min-width: 1550px){
+/*@media (min-width: 1550px){
 .categoriegrid.page-content.container-max {
 	padding-left: 0px;
     	padding-right: 0px;
 }
-}
+}*/
 .sidebar-categories ul li.active>a, .widget-navigation-tree ul li.active>a {
     	background: #eee;
 }
