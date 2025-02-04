@@ -628,11 +628,28 @@ body #vue-app, #vue-error {
     float: left;
     margin-right: 10px;
 }
+@media screen and (min-width: 767px) and (max-width: 1023px){
+.verszahlbild{
+	width: 50%;
+}
+.verszahlbildtext{
+	width: 50%;
+}
+}
 @media screen and (max-width: 520px){
 .verszahlbild{
 	float: none;
 	margin-right: 0px;
 	width: auto;
+}
+}
+.verszahlbild img {
+	width: 100%;
+	padding: 5px;
+}
+@media screen and (max-width: 767px){
+.verszahlbild img {
+	padding: 0;
 }
 }
 .wahlversand {
@@ -642,7 +659,7 @@ body #vue-app, #vue-error {
 	display:flex;
 	margin-bottom:1rem;
 }
-@media screen and (max-width: 885px){
+@media screen and (max-width: 767px){
 .wahlversand {
 	display:grid;
 }
