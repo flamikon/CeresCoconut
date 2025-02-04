@@ -16,10 +16,10 @@ body {
 	height: 100% !important;
 }
 #page-header .widget-inner .amikon_headerAdvantage {
-    	padding: 11px 10px;
+    	padding: 8px 8px;
     	font-weight: 300;
     	text-align: center;
-    	font-size: 0.95rem;
+    	font-size: 1rem;
 }
 #page-header .widget-inner .amikon_headerAdvantage .amikon_advantage {
     	display: inline-block;
