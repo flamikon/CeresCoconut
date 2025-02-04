@@ -314,6 +314,9 @@ body #vue-app, #vue-error {
 	min-height: 70px;
 }
 }
+.input-unit label, .input-unit .input-unit-label {
+    letter-spacing: .8px;
+}
 
 /*Footer Formatierung*/
 .mbot2rem {
@@ -608,6 +611,17 @@ body #vue-app, #vue-error {
 }
 .singlearticlebackground h5, .h5 {
     font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+.single .nav-tabs .nav-link {
+        border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 0;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
 }
 .single .nav-tabs .nav-item, .page-singleitem .nav-tabs .nav-item {
     background: #fff;
