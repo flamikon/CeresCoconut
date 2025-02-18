@@ -1,6 +1,7 @@
 {#Insert markup here#}
 {% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
 {% set lowClsHeader = config("Ceres.header.low_cls_mode") %}
+{% set visibleFields = ceresConfig.basket.previewData %}
 
 <header id="page-header" class="top-bar default-header d-print-none {% if lowClsHeader == "true" %}sticky-top{% endif %}">
         <div class="container-max">
@@ -112,7 +113,7 @@
                                                 	{% endif %}
                                             	</a>
 
-						<basket-preview v-if="$store.state.lazyComponent.components['basket-preview']" :show-net-prices="{{ showNetPrices | json_encode }}">
+						<basket-preview v-if="$store.state.lazyComponent.components['basket-preview']" :show-net-prices="{{ showNetPrices | json_encode }}" :visible-fields="{{ visibleFields | json_encode }}">
                                                 <template #before-basket-item>
                                                     {{ LayoutContainer.show("Ceres::BasketList.BeforeItem") }}
                                                 </template>
