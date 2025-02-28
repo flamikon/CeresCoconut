@@ -410,6 +410,7 @@ body #vue-app, #vue-error {
 {
     color: #fff;
     background-color: rgba(154,150,174,.5);
+	text-shadow: 0 0 5px #000;
 }
 .startseite .widget-caption.widget-image-box-caption.fullwidth:hover {
     color: #fff;
