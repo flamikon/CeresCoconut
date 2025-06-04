@@ -150,7 +150,7 @@ column-count: 3;
 @media (min-width: 768px) and (max-width: 1023.98px) {
 .controls-list .list-inline-item {
     	margin-right: 0;
-    	font-size: .8rem;
+    	font-size: .9rem;
 }
 }
 .controls-list .nav-link[aria-expanded=true] {
@@ -420,6 +420,16 @@ body #vue-app, #vue-error {
 .startseite .widget-caption.widget-image-box-caption.fullwidth:hover {
     color: #fff;
     background-color: rgba(57,47,110,.5);
+}
+@media screen and (min-width: 465px) and (max-width: 575.5px) {
+    .willkommensbanner .widget-image-box-caption.fullwidth h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 464.5px) {
+    .willkommensbanner .widget-image-box-caption.fullwidth h1 {
+        font-size: 2.4rem;
+    }
 }
 .startseite .widget-image-box.widget-primary a[href].widget-inner:hover .widget-caption {
     color: #fff;
