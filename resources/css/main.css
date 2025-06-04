@@ -15,16 +15,16 @@ body {
 .h-100.widget-proportional.widget-prop-1-1{
 	height: 100% !important;
 }
-@media (min-width: 768px) and (max-width: 1023.98px) {
-#page-header .widget-inner .amikon_headerAdvantage {
-    	font-size: .8rem;
-}
-}
 #page-header .widget-inner .amikon_headerAdvantage {
     	padding: 8px 8px;
     	font-weight: 300;
     	text-align: center;
     	font-size: 1.1rem;
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+#page-header .widget-inner .amikon_headerAdvantage {
+    	font-size: .8rem;
+}
 }
 #page-header .widget-inner .amikon_headerAdvantage .amikon_advantage {
     	display: inline-block;
@@ -476,7 +476,7 @@ body #vue-app, #vue-error {
 	padding-left: 8px;
 	border-left: 4px solid #392F6E;
 	font-size: 2.2rem;
-	letter-spacing: 1.25px;
+	letter-spacing: normal;
 	display: block;
 }
 }
