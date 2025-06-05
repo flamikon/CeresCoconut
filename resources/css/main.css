@@ -466,6 +466,16 @@ body #vue-app, #vue-error {
     	color: #fff;
     	background-color: rgba(57, 47, 110, .0);
 }
+.willkommenstext {
+	font-size: 1.3rem;
+	text-align: justify;
+}
+@media screen and (min-width: 768px) and (max-width: 1023.5px) {
+    .willkommenstext {
+	font-size: clamp(1.1rem, 1.1rem + ((1vw - 0.48rem) * 1.25), 1.3rem);
+	text-align: justify;
+}
+}
 .startseite .carousel .carousel-item img {
 	min-width: 100%;
 	min-height: 100%;
