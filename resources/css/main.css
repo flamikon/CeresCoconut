@@ -312,13 +312,13 @@ body #vue-app, #vue-error {
 	color: #fff;
 }
 .cmp-product-thumb .thumb-title {
-	min-height: 45px;
+	min-height: 8vh;
 	color: #212529;
 	font-size: 1.2rem;
 }
-@media (max-width: 991.98px){
+@media and (min-width: 576px) and (max-width: 767.98px){
 .cmp-product-thumb .thumb-title {
-	min-height: 70px;
+	min-height: 7vh;
 }
 }
 .input-unit label, .input-unit .input-unit-label {
@@ -600,7 +600,7 @@ body #vue-app, #vue-error {
 
 /*Startseite Beschriftung Kategoriebilder*/
 @media screen and (min-width: 768px) and (max-width: 1300px){
-.startseite .widget-image-box .widget-inner .widget-caption h2, .widget-image-box .widget-inner .widget-caption .h2 {
+.startseite.widget-image-box .widget-inner .widget-caption h2, .startseite.widget-image-box .widget-inner .widget-caption .h2 {
     margin: 0;
     font-size: clamp(0.7rem, 0.7rem + ((1vw - 0.48rem) * 2.9810000000000003), 1.6rem);
     overflow-wrap: normal;
@@ -608,7 +608,7 @@ body #vue-app, #vue-error {
 }
 }
 @media screen and (max-width: 767.5px){
-.startseite .widget-image-box .widget-inner .widget-caption h2, .widget-image-box .widget-inner .widget-caption .h2 {
+.startseite.widget-image-box .widget-inner .widget-caption h2, .startseite.widget-image-box .widget-inner .widget-caption .h2 {
     margin: 0;
     font-size: clamp(1.5rem, 1.5rem + ((1vw - 0.2rem) * 9.823), 4rem);
     overflow-wrap: normal;
