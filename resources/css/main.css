@@ -1,4 +1,4 @@
-/* ANFANG SEITENBREITE AUF 1600 PX MAX. ERWEITERN */ /*TEST*/
+/* ANFANG SEITENBREITE AUF 1600 PX MAX. ERWEITERN */
 .container-max {
 	z-index: auto;
     	max-width: 1600px;
@@ -9,6 +9,12 @@
 }
 /* ENDE SEITENBREITE AUF 1600 PX MAX. ERWEITERN */
 
+.color-gray-700 {
+    color: #6c757d !important;
+}
+.footer .plenty-brand {
+    height: 25px;
+}
 .h-100.widget-proportional.widget-prop-1-1{
 	height: 100% !important;
 }
