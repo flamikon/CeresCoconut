@@ -315,15 +315,17 @@ body #vue-app, #vue-error {
 .cmp-product-thumb .add-to-basket-lg-container > i {
 	color: #fff;
 }
-@media (max-width: 413.98px){
-.cmp-product-thumb .thumb-title {
-	hyphens: auto; 
-}
-}
+
 .cmp-product-thumb .thumb-title {
 	min-height: 8vh;
 	color: #212529;
 	font-size: 1.2rem;
+}
+@media (max-width: 413.98px){
+.cmp-product-thumb .thumb-title {
+	hyphens: auto;
+	font-size: 1.1rem;
+}
 }
 @media and (min-width: 576px) and (max-width: 767.98px){
 .cmp-product-thumb .thumb-title {
