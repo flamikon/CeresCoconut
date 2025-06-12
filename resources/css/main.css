@@ -632,6 +632,9 @@ body #vue-app, #vue-error {
 .widget-item-price .base-price {
 	display: none;
 }
+.add-to-basket-container button.btn.btn-block.btn-primary.btn-appearance {
+    font-size: 1.5rem;
+}
 .singlearticlebackground .widget-inner {
     padding-bottom: .3rem;
 }
@@ -657,6 +660,7 @@ body #vue-app, #vue-error {
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 	border-bottom: 0;
+	font-size: 1.1rem;
 }
 .nav-tabs {
     border-bottom: 0;
