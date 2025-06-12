@@ -315,6 +315,11 @@ body #vue-app, #vue-error {
 .cmp-product-thumb .add-to-basket-lg-container > i {
 	color: #fff;
 }
+@media (max-width: 413.98px){
+.cmp-product-thumb .thumb-title {
+	hyphens: auto; 
+}
+}
 .cmp-product-thumb .thumb-title {
 	min-height: 8vh;
 	color: #212529;
@@ -330,6 +335,11 @@ body #vue-app, #vue-error {
 }
 
 /*Footer Formatierung*/
+@media (max-width: 575.98px) and (orientation: portrait){
+.ftr-mbl-center {
+	text-align: center;
+}
+}
 .mbot2rem {
 	margin-bottom: 2rem !important;
 }
