@@ -762,10 +762,14 @@ body #vue-app, #vue-error {
 }
 .modal-content
 {
-border-radius: .5rem;
+		border-radius: .5rem;
 }
-form-control {
-border-radius: .5rem;
+.form-control {
+		border-radius: .5rem;
+}
+.input-group>.form-control:not(:last-child) {
+		border-top-right-radius: .5rem;
+    	border-bottom-right-radius: .5rem;
 }
 #CfourContainerPopupModal .modal-content .modal-body button.close {
 	display: none;
