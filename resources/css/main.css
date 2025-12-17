@@ -53,6 +53,7 @@
 }
 .search-input {
     	font-size: 1.2rem;
+		border-radius: .5rem;
 }
 .widget-text.widget {
     	margin-bottom: 2rem;
@@ -119,6 +120,10 @@ column-count: 3;
 }
 .sidebar-categories ul li a[href], .widget-navigation-tree ul li a[href] {
     font-size: 1.1rem;
+}
+.sidebar-categories .category-title {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
 }
 /*ggf. wieder hier alten Falldown Content einfügen*/
 .widget-image-carousel {
@@ -191,15 +196,20 @@ column-count: 3;
 }
 .search-submit {
     	background-color: #eee;
+		border-radius: .5rem;
+}
+.input-unit {
+    	border-radius: .5rem;
 }
 .always-visible-search .container-max .position-relative {
     	-webkit-box-shadow: 0px 0px 0px 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
     	box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
-	-moz-box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
-	-o-box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
-	-ms-box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
+		-moz-box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
+		-o-box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
+		-ms-box-shadow: 0 0 0 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
     	position: relative;
     	max-width: 850px;
+		border-radius: .5rem;
 }
 .navbar {
 	background-color: #fff;
@@ -282,6 +292,9 @@ column-count: 3;
     font-size: 1.5rem;
 }
 }
+.widget-image-box img.img-cover {
+    border-radius: .5rem;
+}
 body {
 	background-color: #fff;
 }
@@ -307,10 +320,8 @@ body #vue-app, #vue-error {
 .page-content.myaccount {
 	margin-top: 0 !important;
 }
-.categoriegrid .cmp-product-thumb {
-	/*border-top: 1px solid #efefef;*/
-	/*border-bottom: 1px solid #efefef;*/
-	/*border: 1px solid #efefef;*/
+.cmp-product-thumb {
+    border-radius: .5rem;
 }
 .cmp-product-thumb .add-to-basket-lg-container {
 	border-color: transparent #575a59 transparent transparent;
@@ -499,6 +510,7 @@ body #vue-app, #vue-error {
 	min-width: 100%;
 	min-height: 100%;
 	object-fit: cover;
+	border-radius: .5rem;
 }
 .title {
 	padding-left: 8px;
@@ -541,6 +553,7 @@ body #vue-app, #vue-error {
 	-moz-transition: all .3s ease;
     	-webkit-transition: all .3s ease;
     	transition: all .3s ease;
+		border-radius: .5rem;
 }
 
 .starttextshadow {
@@ -718,6 +731,7 @@ body #vue-app, #vue-error {
 .verszahlbild img {
 	width: 100%;
 	padding: 5px;
+	border-radius: .5rem;
 }
 @media screen and (max-width: 767px){
 .verszahlbild img {
@@ -735,6 +749,13 @@ body #vue-app, #vue-error {
 .wahlversand {
 	display:grid;
 }
+}
+.modal-content
+{
+border-radius: .5rem;
+}
+form-control {
+border-radius: .5rem;
 }
 #CfourContainerPopupModal .modal-content .modal-body button.close {
 	display: none;
