@@ -126,6 +126,9 @@
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
 }
+.sidebar-categories {
+    border-radius: .5rem;
+}
 /*ggf. wieder hier alten Falldown Content einfügen*/
 .widget-image-carousel {
     	box-shadow: 0 0 0 rgba(0,0,0,0.0);
@@ -743,13 +746,7 @@ body #vue-app, #vue-error {
 }
 .verszahlbild img {
 	width: 100%;
-	padding: 5px;
 	border-radius: .5rem;
-}
-@media screen and (max-width: 767px){
-.verszahlbild img {
-	padding: 0;
-}
 }
 .wahlversand {
 	padding: 5px; 
