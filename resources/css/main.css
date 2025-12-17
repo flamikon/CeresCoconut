@@ -102,9 +102,10 @@
     background: #392f6e;
 }
 .megamenu .collapse {
--webkit-column-count: 3;
--moz-column-count: 3;
-column-count: 3;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	border-radius: 0 0 .5rem .5rem;
 }
 .megamenu .level1 a {
     font-weight: 600;
@@ -200,6 +201,9 @@ column-count: 3;
 }
 .input-unit {
     	border-radius: .5rem;
+}
+.btn {
+		border-radius: .5rem;
 }
 .always-visible-search .container-max .position-relative {
     	-webkit-box-shadow: 0px 0px 0px 0.3px rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
@@ -348,6 +352,15 @@ body #vue-app, #vue-error {
 }
 .input-unit label, .input-unit .input-unit-label {
     letter-spacing: .8px;
+}
+.qty-box .qty-input {
+    border-radius: .5rem 0 0 .5rem;
+}
+.qty-btn-container .qty-btn {
+    border-radius: 0 .5rem 0 0;
+}
+.qty-btn-container .qty-btn+.qty-btn {
+    border-radius: 0 0 .5rem 0;
 }
 
 /*Footer Formatierung*/
