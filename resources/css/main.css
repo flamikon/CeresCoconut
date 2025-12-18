@@ -93,8 +93,8 @@
 }
 }
 a.navbar-brand.py-2 {
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
 .main-navbar-collapsable {
     font-size: 1.1rem;
