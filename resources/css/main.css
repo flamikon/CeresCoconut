@@ -92,7 +92,7 @@
     	color: #212529;
 }
 }
-.navbar-brand .py-2 {
+a.navbar-brand.py-2 {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 }
