@@ -465,6 +465,9 @@ body #vue-app, #vue-error {
 /*Footer Formatierung ENDE*/
 /*Startseite Inhalt*/
 
+.startseite.starttextshadow p {
+    font-size: 1.4rem;
+}
 .startseite.cat-top .widget-caption.widget-image-box-caption.fullwidth {
     color: #fff;
     background-color: rgba(244, 244, 246, .0);
