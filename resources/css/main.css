@@ -328,6 +328,9 @@ body #vue-app, #vue-error {
     	padding-top: 1rem;
     	max-width: 1600px;
 }
+.categoriegrid.page-content.container-max {
+		padding-top: 0 !important;
+}
 .page-content.basket, .page-content.checkout, .page-content.contact, .page-content.wishlist, .page-content.myaccount {
     	color: #282d2f;
     	margin-top: 0;
