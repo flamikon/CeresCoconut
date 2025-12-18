@@ -87,13 +87,21 @@
 
 @media (min-width: 992px){
 	.main-navbar-collapsable ul.mainmenu > li > a {
-    	padding: 2.7rem 1rem;
+    	padding: 1rem 1rem;
     	width: 100%;
     	color: #212529;
 }
 }
+.navbar-brand .py-2 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
 .main-navbar-collapsable {
     font-size: 1.1rem;
+}
+.main-navbar-collapsable li {
+    display: flex;
+    align-items: center;
 }
 .main-navbar-collapsable .ddown>a::after {
     line-height: 1;
@@ -106,6 +114,7 @@
 	-moz-column-count: 3;
 	column-count: 3;
 	border-radius: 0 0 .5rem .5rem;
+	top: 100%;
 }
 .megamenu .level1 a {
     font-weight: 600;
