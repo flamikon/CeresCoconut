@@ -515,7 +515,7 @@ body #vue-app, #vue-error {
 	-o-filter: saturate(0.5);
 	-ms-filter: saturate(0.5);
 }
-.startseite.cat-top img.img-cover:hover {
+.startseite.cat-top:hover img.img-cover {
     filter: saturate(0.8);
 	-webkit-filter: saturate(0.8);
 	-moz-filter: saturate(0.8);
