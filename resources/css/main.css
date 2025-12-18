@@ -1,3 +1,7 @@
+body {
+	font-size: 1.1rem;
+}
+
 /* ANFANG SEITENBREITE AUF 1600 PX MAX. ERWEITERN */
 .container-max {
 	z-index: auto;
