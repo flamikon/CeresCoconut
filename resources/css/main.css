@@ -744,6 +744,12 @@ body #vue-app, #vue-error {
 .owl-thumbs .owl-thumb {
     background: none;
 }
+.widget-text.articlenumber, .widget-code.articlenumber {
+    font-size: 1.2rem;
+}
+.services-payment p.mb-0 {
+    font-size: 1.2rem;
+}
 
 /* Artikelansicht ENDE */
 
