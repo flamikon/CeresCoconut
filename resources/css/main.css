@@ -684,7 +684,7 @@ body #vue-app, #vue-error {
 @media screen and (min-width: 768px) and (max-width: 1300px){
 .startseite.widget-image-box .widget-inner .widget-caption h2, .startseite.widget-image-box .widget-inner .widget-caption .h2 {
     margin: 0;
-    font-size: clamp(0.7rem, 0.7rem + ((1vw - 0.48rem) * 2.9810000000000003), 1.6rem);
+    font-size: clamp(.8rem, 1.4vw, 1.75rem);
     overflow-wrap: normal;
     word-break: normal;
 }
@@ -702,9 +702,24 @@ body #vue-app, #vue-error {
     word-break: normal;
 }
 }
-@media screen and (min-width: 768px) and (max-width: 1099px){
+@media screen and (min-width: 900px) and (max-width: 1099px){
 .widget-image-box.widget-image-box-inline-caption .widget-inner .widget-caption {
     padding: 0 0.5rem;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 899px){
+.widget-image-box.widget-image-box-inline-caption .widget-inner .widget-caption {
+    padding: 0 0.3rem;
+}
+}
+@media screen and (min-width: 900px) and (max-width: 1023.5px){
+.startseite.cat-top.widget-image-box .widget-inner {
+    padding: 1.3rem;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 899.5px){
+.startseite.cat-top.widget-image-box .widget-inner {
+    padding: 1rem;
 }
 }
 .widget-item-price .base-price {
