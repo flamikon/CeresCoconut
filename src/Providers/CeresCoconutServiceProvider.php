@@ -20,7 +20,7 @@ class CeresCoconutServiceProvider extends ServiceProvider
 
     public function register()
     {
-
+        $this->getApplication()->register(CeresCoconutRouteServiceProvider::class);
     }
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
