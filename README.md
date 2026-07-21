@@ -6,6 +6,16 @@
 
 A Coconut theme for Ceres 3.
 
+The Amikon edition includes a password-protected CleverReach MyContent endpoint. It lets the CleverReach newsletter editor search for PlentyONE items and import product names, descriptions, images, prices and shop links.
+
+## CleverReach product source
+
+After deploying the plugin, configure the interface password in the plugin settings. The product source URL is:
+
+`https://www.amikon-shop.de/rest/cleverreach/products?password=YOUR_PASSWORD`
+
+CleverReach calls the endpoint by POST and supplies `get=filter` or `get=search` according to the MyContent protocol.
+
 
 ## Requirements
 

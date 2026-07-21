@@ -124,6 +124,47 @@
                 }
             }
         },
+        "Config.CleverReachTab": {
+            "label": "Config.CleverReachTab",
+            "formFields": {
+                "cleverreach.password": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "Config.cleverReachPasswordLabel",
+                    "options": {
+                        "isPassword": true,
+                        "tooltip": "Config.cleverReachPasswordTooltip"
+                    }
+                },
+                "cleverreach.baseUrl": {
+                    "type": "inputText",
+                    "required": true,
+                    "label": "Config.cleverReachBaseUrlLabel",
+                    "options": {
+                        "defaultValue": "https://www.amikon-shop.de",
+                        "tooltip": "Config.cleverReachBaseUrlTooltip"
+                    }
+                },
+                "cleverreach.itemsPerPage": {
+                    "type": "inputNumber",
+                    "required": true,
+                    "label": "Config.cleverReachItemsPerPageLabel",
+                    "options": {
+                        "defaultValue": 20,
+                        "tooltip": "Config.cleverReachItemsPerPageTooltip"
+                    }
+                },
+                "cleverreach.descriptionLength": {
+                    "type": "inputNumber",
+                    "required": true,
+                    "label": "Config.cleverReachDescriptionLengthLabel",
+                    "options": {
+                        "defaultValue": 320,
+                        "tooltip": "Config.cleverReachDescriptionLengthTooltip"
+                    }
+                }
+            }
+        },
         "Config.ResultFieldsTab": {
             "label": "Config.ResultFieldsTab",
             "formFields": {
