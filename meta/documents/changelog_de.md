@@ -1,5 +1,18 @@
 # Release Notes für CeresCoconut
 
+## v1.1.0 (2026-07-21)
+
+### Hinzugefügt
+
+- Geschützte CleverReach-MyContent-Schnittstelle für die Suche nach PlentyONE-Artikeln.
+- Übergabe von Produktname, Kurzbeschreibung, Bild, Preis, Artikelnummer, Verfügbarkeit und Shoplink an CleverReach.
+- Konfiguration für Kennwort, Shop-URL, Trefferzahl und Beschreibungslänge.
+
+### TODO
+
+- Im Tab **CleverReach-Produktsuche** ein Schnittstellen-Kennwort speichern.
+- Die Produktquellen-URL anschließend in CleverReach hinterlegen.
+
 ## v1.0.7 (2019-05-02)
 
 ### TODO

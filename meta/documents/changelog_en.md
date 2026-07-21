@@ -1,5 +1,18 @@
 # Release Notes for CeresCoconut
 
+## v1.1.0 (2026-07-21)
+
+### Added
+
+- Password-protected CleverReach MyContent endpoint for searching PlentyONE products.
+- Product name, short description, image, price, item number, availability and shop URL are supplied to CleverReach.
+- Configuration options for the password, shop URL, result count and description length.
+
+### TODO
+
+- Save an interface password in the **CleverReach product search** tab.
+- Add the product source URL to CleverReach.
+
 ## v1.0.7 (2019-05-02)
 
 ### TODO

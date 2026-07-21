@@ -61,6 +61,39 @@ Nach **Installation** und **Bereitstellung** des Plugins geben Sie Ihr eigenes C
 4. Aktivieren Sie **Artikeldaten der Artikelansicht** unter **Datenfelder überschreiben**.
 5. **Speichern** Sie die Einstellungen.<br /> → Ihre eigenen Datenfelder werden für die Artikelansicht aktiviert.
 
+## PlentyONE-Artikel in CleverReach verwenden
+
+Die CleverReach-MyContent-Schnittstelle stellt sichtbare und aktive Artikel aus dem Shop für den CleverReach-Newsletter-Editor bereit. Übertragen werden Artikelname, Kurzbeschreibung, Produktbild, Verkaufspreis, Artikelnummer, Verfügbarkeit und Shoplink.
+
+##### Schnittstelle in PlentyONE einrichten:
+
+1. Installieren Sie Version 1.1.0 dieses Plugins im Plugin-Set des Shops.
+2. Öffnen Sie **Plugins » Plugin-Übersicht**.
+3. Öffnen Sie das Plugin **CeresCoconut**.
+4. Öffnen Sie **Konfiguration » CleverReach-Produktsuche**.
+5. Tragen Sie ein langes, zufälliges **Schnittstellen-Kennwort** ein.
+6. Prüfen Sie die Shop-URL `https://www.amikon-shop.de`.
+7. Speichern Sie die Konfiguration und stellen Sie das Plugin-Set bereit.
+
+Die Produktquellen-URL lautet anschließend:
+
+`https://www.amikon-shop.de/rest/cleverreach/products?password=IHR_KENNWORT`
+
+##### Schnittstelle prüfen:
+
+Senden Sie einen POST-Aufruf mit `get=filter` an die Produktquellen-URL. Die Antwort muss die Suchfelder **Sprache** und **Artikel** als JSON enthalten. Ein POST-Aufruf mit `get=search`, `language=de` und `product=SLM` muss passende Produkte liefern.
+
+##### Produktquelle in CleverReach einrichten:
+
+1. Hinterlegen Sie die oben genannte URL als **MyContent-Produktquellen-URL** in CleverReach. Falls das Feld in Ihrem Konto nicht angezeigt wird, lassen Sie die eigene MyContent-Produktquelle durch den CleverReach-Support aktivieren.
+2. Erstellen oder öffnen Sie einen Newsletter.
+3. Fügen Sie ein Produkt-Layout beziehungsweise dynamisches Element ein.
+4. Öffnen Sie **Dynamischen Inhalt einfügen** und wählen Sie die neue Produktquelle.
+5. Wählen Sie die Sprache und suchen Sie nach Artikelname, Artikel-ID oder Variantennummer.
+6. Wählen Sie einen Treffer aus und übernehmen Sie ihn in den Newsletter.
+
+Das Schnittstellen-Kennwort darf nicht veröffentlicht oder in normalen Shopseiten ausgegeben werden. Ändern Sie es in PlentyONE und in CleverReach gleichzeitig, falls es bekannt geworden ist.
+
 ## Lizenz
 
 Das gesamte Projekt unterliegt der GNU AFFERO GENERAL PUBLIC LICENSE – weitere Informationen finden Sie in der [LICENSE](https://github.com/plentymarkets/plugin-ceres-Coconut/blob/master/LICENSE).
