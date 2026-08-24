@@ -837,7 +837,7 @@ body #vue-app, #vue-error {
 .widget-add-to-basket .paypalSmartButtons {
   width: calc(100% - 61px) !important;
   margin-left: 66px !important;
-  
+}
   
 /* Paypal Button Smartphone */
 @media screen and (max-width: 767px) {
