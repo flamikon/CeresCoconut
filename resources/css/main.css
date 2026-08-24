@@ -835,8 +835,8 @@ body #vue-app, #vue-error {
 
 /* Paypal Button Desktop / Tablet */
 .widget-add-to-basket .paypalSmartButtons {
-  width: calc(100% - 80px) !important;
-  margin-left: 76px !important;
+  width: calc(100% - 61px) !important;
+  margin-left: 66px !important;
   
   
 /* Paypal Button Smartphone */
