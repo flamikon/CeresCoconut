@@ -832,3 +832,18 @@ body #vue-app, #vue-error {
 #CfourContainerPopupCompany {
 	display: none;
 }
+
+/* Paypal Button Desktop / Tablet */
+.widget-add-to-basket .paypalSmartButtons {
+  width: calc(100% - 80px) !important;
+  margin-left: 76px !important;
+  
+  
+/* Paypal Button Smartphone */
+@media screen and (max-width: 767px) {
+    .widget-add-to-basket .paypalSmartButtons {
+        width: 100% !important;
+        margin-left: -10px !important;
+		margin-top: 10px;
+    }
+}
